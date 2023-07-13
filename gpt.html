@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-rows: 400px auto;
+            /* 첫 번째 행은 400px, 두 번째 행은 자동 크기 설정 */
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+        }
+
+        .item-1 {
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 1;
+        }
+
+        .item-2 {
+            width: 200px;
+            height: 300px;
+            border: 2px solid black;
+            grid-row: 2 / span 1;
+            grid-column: 1 / span 1;
+        }
+
+        .item-3 {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            grid-row: 1 / span 1;
+            grid-column: 2 / span 1;
+        }
+
+        .item-4 {
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            grid-row: 2 / span 1;
+            grid-column: 2 / span 1;
+        }
+
+        .item-5 {
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            grid-row: 3 / span 1;
+            grid-column: 2 / span 1;
+        }
+    </style>
+</head>
+
+<body class="grid-container">
+    <div class="item-1">item1</div>
+    <div class="item-2">item2</div>
+    <div class="item-3">item3</div>
+    <div class="item-4">item4</div>
+    <div class="item-5">item5</div>
+</body>
+
+</html>

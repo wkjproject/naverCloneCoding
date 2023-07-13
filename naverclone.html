@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학습용 네이버 클론코딩</title>
+    <link rel="stylesheet" href="./css/naverclone.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <div id="top_left" class="top_left_area">
+                <button type="button" class="top_left_button" aria-haspopup="menu" aria-expanded="true"></button>
+            </div>
+            <div id="search_area" class="search_area_box">
+                <div id="search_logo" class="search_N_logo">
+                    <a href="http://www.naver.com">
+                        <img src="./image/header_searchbox_N_Logo.svg" alt="naver_logo" class="search_N_logo_svg">
+                    </a>
+                </div>
+                <div id="search" class="search_text_box_area">
+                    <form action="http://search.naver.com/search.naver" method="get" id="search_form">
+                        <input type="text" class="search_text_box" name="query" placeholder="검색어를 입력해주세요." autofocus>
+                    </form>
+                </div>
+                <div id="search_right_border" class="search_right_border">
+                    <div class="image_container">
+                        <button type="button" alt="header_searchbox_keyboard" id="header_searchbox_image_keyboard"
+                            class="header_searchbox_keyboard"></button>
+                        <button type="button" alt="header_searchbox_triangle" id="header_searchbox_image_triangle"
+                            class="header_searchbox_triangle"></button>
+                        <button type="submit" form="search_form" header_searchbox_glasses"
+                            id="header_searchbox_image_glasses" class="header_searchbox_glasses"></button>
+                    </div>
+                </div>
+                <div id="search_hidden" class="search_hidden_block"> <!-- 트라이앵글 누르면 밑에 나오는 히든블록 -->
+                    <a href="https://help.naver.com/service/5627/category/3904?lang=ko" target="_blank">
+                        <span>도움말</span>
+                    </a>
+                    <a href="https://help.naver.com/service/5627/category/3905?lang=ko" target="_blank">
+                        <span>신고</span>
+                    </a>
+                </div>
+            </div>
+            <div id="top_right_area" class="top_right-area">
+                <div id="top_right1" class="top_right_area1">
+                    <button type="button" class="top_right_button1"></button>
+                </div>
+                <div id="top_right2" class="top_right_area2">
+                    <button type="button" class="top_right_button2"></button>
+                </div>
+            </div>
+            <div id="text_box_under_menu_area" class="text_box_under_menu_area">
+                <a href="https://mail.naver.com/">
+                    <button type="button" class="text_box_under_mail">
+                        <span class="text_box_under_menu_text">메일</span>
+                    </button>
+                </a>
+                <a href="https://cafe.naver.com/">
+                    <button type="button" class="text_box_under_cafe">
+                        <span class="text_box_under_menu_text">카페</span>
+                    </button>
+                </a>
+                <a href="https://blog.naver.com/">
+                    <button type="button" class="text_box_under_blog">
+                        <span class="text_box_under_menu_text">블로그</span>
+                    </button>
+                </a>
+                <a href="https://shopping.naver.com/home">
+                    <button type="button" class="text_box_under_shop">
+                        <span class="text_box_under_menu_text">쇼핑</span>
+                    </button>
+                </a>
+                <a href="https://news.naver.com/">
+                    <button type="button" class="text_box_under_news">
+                        <span class="text_box_under_menu_text">뉴스</span>
+                    </button>
+                </a>
+                <a href="https://finance.naver.com/">
+                    <button type="button" class="text_box_under_stock">
+                        <span class="text_box_under_menu_text">증권</span>
+                    </button>
+                </a>
+                <a href="https://land.naver.com/">
+                    <button type="button" class="text_box_under_estate">
+                        <span class="text_box_under_menu_text">부동산</span>
+                    </button>
+                </a>
+                <a href="https://map.naver.com/">
+                    <button type="button" class="text_box_under_map">
+                        <span class="text_box_under_menu_text">지도</span>
+                    </button>
+                </a>
+                <a href="https://comic.naver.com/">
+                    <button type="button" class="text_box_under_webtoon">
+                        <span class="text_box_under_menu_text">웹툰</span>
+                    </button>
+                </a>
+                <button type="button" class="text_box_under_etcbutton"></button>
+                </button>
+            </div>
+        </header>
+        <main id=main_grid class="main_grid">
+            <section id="section_left" class="section_left">
+                <div id="section_left" class="section_left">
+                    <div class="item_1_1">item1-1</div>
+                    <div class="item_1_2">item1-2</div>
+                    <div class="item_1_3">item1-3</div>
+                    <div class="item_1_4">item1-4</div>
+                </div>
+            </section>
+            <aside>
+                <div id="sidebar" class="sidebar">
+                    <div class="item_2_1">item2-1</div>
+                    <div class="item_2_2">item2-2</div>
+                    <div class="item_2_3">item2-3</div>
+                    <div class="item_2_4">item2-4</div>
+                    <div class="item_2_5">item2-5</div>
+                    <div class="item_2_6">item2-6</div>
+                </div>
+            </aside>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+
+    <script>
+        /* 트라이앵글 버튼 요소 가져오기 */
+        var triangle_button = document.getElementById("header_searchbox_image_triangle");
+        /* 숨겨진 블록 가져오기 */
+        var hidden_block = document.getElementById("search_hidden");
+        /* 동작할 함수 만들기 */
+        function show_hidden_block() {
+            if (hidden_block.style.display === "flex") {
+                hidden_block.style.display = "none";
+            } else {
+                hidden_block.style.display = "flex";
+            }
+
+        }
+        /* 트라이앵글 버튼에 클릭 이벤트 추가 */
+        triangle_button.addEventListener("click", show_hidden_block);
+    </script>
+</body>
+
+</html>
