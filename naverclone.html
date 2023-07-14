@@ -9,8 +9,12 @@
 </head>
 
 <body>
+    <!-- 전체 컨테이너 부분 -->
     <div id="container">
+
+        <!-- 헤더 부분(좌상단메뉴+검색창+검색창하단퀵메뉴+우상단 네이버페이+우상단 알림혜택) -->
         <header>
+            <!-- 왼쪽 위 작대기 3줄 버튼 -->
             <div id="top_left" class="top_left_area">
                 <button type="button" class="top_left_button" aria-haspopup="menu" aria-expanded="true"></button>
             </div>
@@ -126,24 +130,6 @@
 
         </footer>
     </div>
-
-    <script>
-        /* 트라이앵글 버튼 요소 가져오기 */
-        var triangle_button = document.getElementById("header_searchbox_image_triangle");
-        /* 숨겨진 블록 가져오기 */
-        var hidden_block = document.getElementById("search_hidden");
-        /* 동작할 함수 만들기 */
-        function show_hidden_block() {
-            if (hidden_block.style.display === "flex") {
-                hidden_block.style.display = "none";
-            } else {
-                hidden_block.style.display = "flex";
-            }
-
-        }
-        /* 트라이앵글 버튼에 클릭 이벤트 추가 */
-        triangle_button.addEventListener("click", show_hidden_block);
-    </script>
 </body>
 
 </html>
