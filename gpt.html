@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학습용 네이버 클론코딩</title>
+    <link rel="stylesheet" href="./css/naverclone.css">
     <style>
         .my-button::before {
             content: "";
@@ -12,21 +16,33 @@
             transition: opacity 0.3s;
         }
 
-        .my-button:hover::before,
         .my-button.focus::before {
+            opacity: 1;
+        }
+        
+        .other-div {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .other-div.show {
             opacity: 1;
         }
     </style>
 </head>
 <body>
     <button class="my-button">클릭해주세요</button>
-
+    <div class="other-div">다른 div 요소</div>
+    
     <script>
         const button = document.querySelector('.my-button');
-
+        const otherDiv = document.querySelector('.other-div');
+        
         button.addEventListener('click', () => {
             button.classList.add('focus');
             button.focus();
+            
+            otherDiv.classList.add('show');
         });
     </script>
 </body>

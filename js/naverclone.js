@@ -13,3 +13,31 @@ function show_hidden_block() {
 }
 /* 트라이앵글 버튼에 클릭 이벤트 추가 */
 triangle_button.addEventListener("click", show_hidden_block);
+
+/* top_left_button 에 상수 설정 */
+const top_left_button = document.querySelector('.top_left_button');
+const top_left_button_menu = document.querySelector('#top_left_button_menu')
+const text_box_under_mail = document.querySelector('.text_box_under_mail');
+const text_box_under_cafe = document.querySelector('.text_box_under_cafe');
+
+top_left_button.addEventListener('click', () => {
+    top_left_button.classList.toggle('focus');
+    top_left_button.focus();
+
+    if (top_left_button_menu.classList.contains('show')) {
+        top_left_button_menu.classList.remove('show');
+        text_box_under_mail.style.zIndex= '200';
+        text_box_under_cafe.style.zIndex= '200';
+    } else {
+        top_left_button_menu.classList.add('show');
+        text_box_under_mail.style.zIndex= '0';
+        text_box_under_cafe.style.zIndex= '0';
+    }
+});
+
+top_left_button.addEventListener('blur', () => {
+    top_left_button_menu.classList.remove('show');
+    text_box_under_mail.style.zIndex= '200';
+    text_box_under_cafe.style.zIndex= '200';
+});
+
