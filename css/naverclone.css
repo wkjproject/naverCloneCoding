@@ -159,11 +159,11 @@ footer {
   cursor: pointer;
 }
 
-.top_left_area::before {
+.top_left_button::before {
   content: "";
   /* 가상요소 내용 */
   position: absolute;
-  top: 3px;
+  top: 6px;
   left: 13px;
   width: 40px;
   height: 40px;
@@ -176,12 +176,7 @@ footer {
   pointer-events: none;
 }
 
-.top_left_area:hover::before,
-.top_left_area:hover::after {
-  opacity: 1;
-}
-
-.top_left_area::after {
+.top_left_button::after {
   content: "";
   position: absolute;
   top: 45px;
@@ -194,7 +189,18 @@ footer {
   background-position: center;
   opacity: 0;
   transition: opacity 0.3s;
-  pointer-events: none;
+}
+
+.top_left_button:hover::before,
+.top_left_button:hover::after {
+  opacity: 1;
+}
+
+.top_left_button:focus::before {
+  opacity: 1;
+}
+.top_left_button:focus::after {
+  opacity: 0;
 }
 
 .search_text_box {
@@ -591,9 +597,10 @@ footer {
   width: 400px;
   height: 3169px;
   padding: 20px;
-  top: 54px;
+  top: 50px;
+  left: 3px;
   background-color: white;
-  opacity: 1;
+  opacity: 0;
 }
 
 #top_left_button_menu > div {
