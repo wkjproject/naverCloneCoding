@@ -4,46 +4,284 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>학습용 네이버 클론코딩</title>
-    <link rel="stylesheet" href="./css/naverclone.css">
     <style>
-        .my-button::before {
-            content: "";
-            display: block;
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        .my-button.focus::before {
-            opacity: 1;
-        }
-        
-        .other-div {
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        
-        .other-div.show {
-            opacity: 1;
+        td {
+            border: 1px solid black;
+            background-color: blue;
         }
     </style>
 </head>
 <body>
-    <button class="my-button">클릭해주세요</button>
-    <div class="other-div">다른 div 요소</div>
-    
-    <script>
-        const button = document.querySelector('.my-button');
-        const otherDiv = document.querySelector('.other-div');
-        
-        button.addEventListener('click', () => {
-            button.classList.add('focus');
-            button.focus();
-            
-            otherDiv.classList.add('show');
-        });
-    </script>
+    <aside id="top_left_button_menu">
+        <div id="top_left_button_menu1"><span class="menu_font_bold">바로가기</span></div>
+        <div id="top_left_button_menu2"><span class="menu_font_bold">로그인</span>하세요&gt;
+            <table>
+                <tr>
+                    <td>메일</td>
+                    <td>카페</td>
+                    <td>블로그</td>
+                    <td>네이버쇼핑</td>
+                </tr>
+                <tr>
+                    <td>네이버페이</td>
+                    <td>증권</td>
+                    <td>Keep</td>
+                    <td>톡톡</td>
+                </tr>
+            </table>
+        </div>
+        <div id="top_left_button_menu3"><span class="menu_font_bold">전체서비스</span> 서비스검색</div>
+        <div id="top_left_button_menu4">
+            <table>
+                <tr>
+                    <td colspan="2" class="caption_font_bold">뉴스<span>4</span></td>
+                </tr>
+                <tr>
+                    <td>날씨</td>
+                    <td>뉴스</td>
+                </tr>
+                <tr>
+                    <td>스포츠</td>
+                    <td>TV연예</td>
+                </tr>
+            </table>
+        </div>
+        <div id="top_left_button_menu5">
+            <table>
+                <tr>
+                    <td colspan="2" class="caption_font_bold">금융·자산<span>4</span></td>
+                </tr>
+                <tr>
+                    <td>네이버페이</td>
+                    <td>부동산</td>
+                </tr>
+                <tr>
+                    <td>증권</td>
+                    <td>MY CAR</td>
+                </tr>
+            </table>
+        </div>
+        <div id="top_left_button_menu6">
+            <table>
+                <tr>
+                    <td colspan="2" class="caption_font_bold">엔터테인먼트·문화<span>9</span></td>
+                </tr>
+                    <td>네이버게임</td>
+                    <td>네이버TV</td>
+                </tr>
+                <tr>
+                    <td>시리즈</td>
+                    <td>시리즈온</td>
+                </tr>
+                <tr>
+                    <td>오디오클립</td>
+                    <td>웹소설</td>
+                </tr>
+                <tr>
+                    <td>웹툰</td>
+                    <td>NOW</td>
+                </tr>
+                <tr>
+                    <td>VIBE</td>
+                </tr>
+            </table>
+        </div>
+        <div id="top_left_button_menu7">
+            <table>
+                <tr>
+                    <td colspan="2" class="caption_font_bold">쇼핑<span>5</span></td>
+                </tr>
+                <tr>
+                    <td>네이버쇼핑</td>
+                    <td>네이버장보기</td>
+                </tr>
+                <tr>
+                    <td>선물샵</td>
+                    <td>쇼핑라이브</td>
+                </tr>
+                <tr>
+                    <td>패션타운</td>
+                </tr>
+            </table>
+        </div>
+        <div id="top_left_button_menu8">
+            <table>
+                <tr>
+                    <td colspan="2" class="caption_font_bold">멤버십<span>2</span></td>
+                </tr>
+                <tr>
+                    <td>멤버십</td>
+                    <td>멤버십스튜던트</td>
+                </tr>
+            </table>
+        </div>
+        <div id="top_left_button_menu9">
+            <table>
+                <tr>
+                    <td colspan="2" class="caption_font_bold">내도구<span>7</span></td>
+                </tr>
+                <tr>
+                    <td>메모</td>
+                    <td>메일</td>
+                </tr>
+                <tr>
+                    <td>주소록</td>
+                    <td>캘린더</td>
+                </tr>
+                <tr>
+                    <td>톡톡</td>
+                    <td>Keep</td>
+                </tr>
+                <tr>
+                    <td>MYBOX</td>
+                </tr>
+            </table>
+        </div>
+        <div id="top_left_button_menu10">
+            <table>
+                <tr>
+                    <td colspan="2" class="caption_font_bold">인증<span>6</span></td>
+                </tr>
+                <tr>
+                    <td>네이버 자격증</td>
+                    <td>네이버 출입증</td>
+                </tr>
+                <tr>
+                    <td>인증서</td>
+                    <td>전자문서</td>
+                </tr>
+                <tr>
+                    <td>전자증명서</td>
+                    <td>학생동문인증</td>
+                </tr>
+            </table>
+        </div>
+        <div id="top_left_button_menu11">
+            <table>
+                <tr>
+                    <td colspan="2" class="caption_font_bold">커뮤니티·콘텐츠<span>7</span></td>
+                </tr>
+                <tr>
+                    <td>밴드</td>
+                    <td>블로그</td>
+                </tr>
+                <tr>
+                    <td>뿜</td>
+                    <td>인플루언서</td>
+                </tr>
+                <tr>
+                    <td>카페</td>
+                    <td>포스트</td>
+                </tr>
+                <tr>
+                    <td>프리미엄 콘텐츠</td>
+                </tr>
+            </table>
+        </div>
+        <div id="top_left_button_menu12">
+            <table>
+                <tr>
+                    <td colspan="2" class="caption_font_bold">지도·여행<span>5</span></td>
+                </tr>
+                <tr>
+                    <td>네이버예약</td>
+                    <td>지도</td>
+                </tr>
+                <tr>
+                    <td>항공권</td>
+                    <td>호텔</td>
+                </tr>
+                <tr>
+                    <td>MY플레이스</td>
+                </tr>
+            </table>
+        </div>
+        <div id="top_left_button_menu13">
+            <table>
+                <tr>
+                    <td colspan="2" class="caption_font_bold">사전·지식<span>4</span></td>
+                </tr>
+                <tr>
+                    <td>사전</td>
+                    <td>엑스퍼트</td>
+                </tr>
+                <tr>
+                    <td>지식백과</td>
+                    <td>지식iN</td>
+                </tr>
+            </table>
+        </div>
+        <div id="top_left_button_menu14">
+            <table>
+                <tr>
+                    <td colspan="2" class="caption_font_bold">파트너서비스<span>14</span></td>
+                </tr>
+                <tr>
+                    <td class="menu14_font_bold">창작자 지원</td>
+                </tr>
+                <tr>
+                    <td>인플루언서센터</td>
+                </tr>
+                <tr>
+                    <td>크리에이터어드바이저</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td class="menu14_font_bold">소상공인 지원</td>
+                </tr>
+                <tr>
+                    <td>네이버 비즈니스 금융센터</td>
+                </tr>
+                <tr>
+                    <td>네이버 비즈니스 스쿨</td>
+                </tr>
+                <tr>
+                    <td>스마트 플레이스</td>
+                </tr>
+                <tr>
+                    <td>스마트스토어센터</td>
+                </tr>
+                <tr>
+                    <td>톡톡 파트너센터</td>
+                </tr>
+                <tr>
+                    <td>modoo!</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td class="menu14_font_bold">기업용 솔루션</td>
+                </tr>
+                <tr>
+                    <td>네이버 로그인</td>
+                </tr>
+                <tr>
+                    <td>네이버 애널리틱스</td>
+                </tr>
+                <tr>
+                    <td>네이버 클라우드 플랫폼</td>
+                </tr>
+                <tr>
+                    <td>네이버웍스</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td class="menu14_font_bold">광고</td>
+                </tr>
+                <tr>
+                    <td>검색광고</td>
+                </tr>
+                <tr>
+                    <td>디스플레이광고</td>
+                </tr>
+            </table>
+        </div>
+        <div id="top_left_button_footer">로그인 고객센터 </div>
+
+
+
+    </aside>
 </body>
 </html>

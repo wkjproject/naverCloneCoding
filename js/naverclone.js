@@ -19,6 +19,7 @@ const top_left_button = document.querySelector('.top_left_button');
 const top_left_button_menu = document.querySelector('#top_left_button_menu')
 const text_box_under_mail = document.querySelector('.text_box_under_mail');
 const text_box_under_cafe = document.querySelector('.text_box_under_cafe');
+const search_N_logo = document.querySelector('.search_N_logo');
 
 top_left_button.addEventListener('click', () => {
     top_left_button.classList.toggle('focus');
@@ -26,18 +27,25 @@ top_left_button.addEventListener('click', () => {
 
     if (top_left_button_menu.classList.contains('show')) {
         top_left_button_menu.classList.remove('show');
-        text_box_under_mail.style.zIndex= '200';
-        text_box_under_cafe.style.zIndex= '200';
+        text_box_under_mail.style.zIndex = '200';
+        text_box_under_cafe.style.zIndex = '200';
+        search_N_logo.style.zIndex = '200';
+        top_left_button_menu.style.zIndex = '0';
     } else {
         top_left_button_menu.classList.add('show');
-        text_box_under_mail.style.zIndex= '0';
-        text_box_under_cafe.style.zIndex= '0';
+        text_box_under_mail.style.zIndex = '0';
+        text_box_under_cafe.style.zIndex = '0';
+        search_N_logo.style.zIndex = '0';
+        top_left_button_menu.style.zIndex = '100';
     }
 });
 
-top_left_button.addEventListener('blur', () => {
-    top_left_button_menu.classList.remove('show');
-    text_box_under_mail.style.zIndex= '200';
-    text_box_under_cafe.style.zIndex= '200';
+document.addEventListener('click', (event) => {
+    if (!top_left_button.contains(event.target) && !top_left_button_menu.contains(event.target)) {
+        top_left_button_menu.classList.remove('show');
+        text_box_under_mail.style.zIndex = '200';
+        text_box_under_cafe.style.zIndex = '200';
+        search_N_logo.style.zIndex = '200';
+        top_left_button_menu.style.zIndex = '0';
+    }
 });
-

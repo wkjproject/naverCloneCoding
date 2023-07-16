@@ -9,7 +9,6 @@ body {
   width: 1280px;
   height: 2800px;
   margin: 0 auto;
-  height:
 }
 
 header {
@@ -17,6 +16,12 @@ header {
   height: 261px;
   border: 1px solid black;
   /* 임시값 */
+  z-index: 1;
+}
+
+a, a:active, a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 .main_grid {
@@ -207,6 +212,7 @@ footer {
 .top_left_button:focus::before {
   opacity: 1;
 }
+
 .top_left_button:focus::after {
   opacity: 0;
 }
@@ -248,6 +254,8 @@ footer {
 
 .search_N_logo {
   display: inline-block;
+  position: relative;
+  z-index: 200;
   justify-content: center;
   vertical-align: middle;
   text-align: center;
@@ -612,20 +620,94 @@ footer {
   left: 0px;
   background-color: white;
   opacity: 0;
-  z-index: 100;
+  z-index: 0;
   overflow: scroll;
+  visibility: hidden;
+  border: 1px solid #ddd;
+  border-radius: 15px;
 }
+
+/* #top_left_button_menu::-webkit-scrollbar {
+  margin-right: 5px;
+} */
 
 #top_left_button_menu.show {
   opacity: 1;
+  visibility:visible;
 }
 
 
-#top_left_button_menu > div {
+#top_left_button_menu>div {
   margin-bottom: 20px;
 }
 
-#top_left_button_menu1, #top_left_button_menu2 {
+#top_left_button_menu1,
+#top_left_button_menu2 {
   padding-bottom: 20px;
   border-bottom: 1px solid #ddd;
+}
+
+.menu_font_bold {
+  font-weight: 900;
+}
+
+#top_left_button_menu1,
+#top_left_button_menu2,
+#top_left_button_menu3 {
+  font-size: 1.3rem;
+}
+
+#top_left_button_menu>div>table {
+  table-layout: fixed;
+  font-size: 1rem;
+  width: 100%;
+  border: 1px solid black;
+}
+
+#top_left_button_menu div table tr td {
+  border: 1px solid black; /* 임시 선 */
+  padding: 0px;
+  padding-left: 10px;
+  margin-top: -5px;
+}
+
+#login_table tr td{
+  text-align: center;
+}
+
+.caption_font_bold {
+  background-color: rgb(238, 242, 249);
+  font-weight: 700;
+  font-size: 1.2rem;
+
+}
+
+.menu14_font_bold {
+  font-weight: 600;
+}
+
+.caption_font_number {
+  color: rgb(83,125,226);
+}
+
+.login_table_img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: -4px;
+}
+
+.service_search {
+  line-height: 33px;
+  font-size: 1rem;
+  float: right;
+}
+
+.service_search_icon {
+  height: 15px;
+  width: 15px;
+}
+
+.top_left_button_menu_icon {
+  height: 25px;
+  width: 25px;
 }

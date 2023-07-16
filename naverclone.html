@@ -109,39 +109,43 @@
         </header>
         <aside id="top_left_button_menu">
             <div id="top_left_button_menu1"><span class="menu_font_bold">바로가기</span></div>
-            <div id="top_left_button_menu2"><span class="menu_font_bold">로그인</span>하세요&gt;
-                <table>
+            <div id="top_left_button_menu2"><a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/"><span class="menu_font_bold">로그인</span>하세요&gt;</a>
+                <table id="login_table">
                     <tr>
-                        <td>메일</td>
-                        <td>카페</td>
-                        <td>블로그</td>
-                        <td>네이버쇼핑</td>
+                        <td><a href="https://mail.naver.com/" target="_blank"><img src="./image/header_mail.png" alt="" class="login_table_img"><br>메일</a></td>
+                        <td><a href="https://cafe.naver.com/" target="_blank"><img src="./image/header_cafe.png" alt="" class="login_table_img"><br>카페</a></td>
+                        <td><a href="https://blog.naver.com/" target="_blank"><img src="./image/header_blog.png" alt="" class="login_table_img"><br>블로그</a></td>
+                        <td><a href="https://shopping.naver.com/home" target="_blank"><img src="./image/header_shopping.png" alt="" class="login_table_img"><br>네이버쇼핑</a></td>
                     </tr>
                     <tr>
-                        <td>네이버페이</td>
-                        <td>증권</td>
-                        <td>Keep</td>
-                        <td>톡톡</td>
+                        <td><a href="https://new-m.pay.naver.com/pcpay?page=1" target="_blank"><img src="./image/header_naverpay.png" alt="" class="login_table_img"><br>네이버페이</a></td>
+                        <td><a href="https://finance.naver.com/" target="_blank"><img src="./image/header_stock.png" alt="" class="login_table_img"><br>증권</a></td>
+                        <td><a href="https://keep.naver.com/" target="_blank"><img src="./image/naver_keep.png" alt="" class="login_table_img"><br>Keep</a></td>
+                        <td><a href="https://talk.naver.com/" target="_blank"><img src="./image/naver_toktok.png" alt="" class="login_table_img"><br>톡톡</a></td>
                     </tr>
                 </table>
             </div>
-            <div id="top_left_button_menu3"><span class="menu_font_bold">전체서비스</span> 서비스검색</div>
+            <div id="top_left_button_menu3"><span class="menu_font_bold">전체서비스</span> <span class="service_search"><img src="./image/service_search_icon.png" alt="" class="service_search_icon">서비스검색</span></div>
             <div id="top_left_button_menu4">
                 <table>
-                    <caption class="caption_font_bold">뉴스<span>4</span></caption>
                     <tr>
-                        <td>날씨</td>
-                        <td>뉴스</td>
+                        <td colspan="2" class="caption_font_bold">뉴스<span class="caption_font_number">4</span></td>
                     </tr>
                     <tr>
-                        <td>스포츠</td>
-                        <td>TV연예</td>
+                        <td><img src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615143240N24qS.png" alt="" class="top_left_button_menu_icon"><span class="top_left_button_menu_icon_text">날씨</span></td>
+                        <td><img src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615106921rd5tr.png" alt="" class="top_left_button_menu_icon"><span class="top_left_button_menu_icon_text">뉴스</span></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615170126wWXeF.png" alt="" class="top_left_button_menu_icon"><span class="top_left_button_menu_icon_text">스포츠</span></td>
+                        <td><img src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615192069PNz1Q.png" alt="" class="top_left_button_menu_icon"><span class="top_left_button_menu_icon_text">TV연예</span></td>
                     </tr>
                 </table>
             </div>
             <div id="top_left_button_menu5">
                 <table>
-                    <caption class="caption_font_bold">금융·자산<span>4</span></caption>
+                    <tr>
+                        <td colspan="2" class="caption_font_bold">금융·자산<span class="caption_font_number">4</span></td>
+                    </tr>
                     <tr>
                         <td>네이버페이</td>
                         <td>부동산</td>
@@ -154,10 +158,11 @@
             </div>
             <div id="top_left_button_menu6">
                 <table>
-                    <caption class="caption_font_bold">엔터테인먼트·문화<span>9</span></caption>
                     <tr>
-                        <td>네이버게임</td>
-                        <td>네이버TV</td>
+                        <td colspan="2" class="caption_font_bold">엔터테인먼트·문화<span class="caption_font_number">9</span></td>
+                    </tr>
+                    <td>네이버게임</td>
+                    <td>네이버TV</td>
                     </tr>
                     <tr>
                         <td>시리즈</td>
@@ -178,7 +183,9 @@
             </div>
             <div id="top_left_button_menu7">
                 <table>
-                    <caption class="caption_font_bold">쇼핑<span>5</span></caption>
+                    <tr>
+                        <td colspan="2" class="caption_font_bold">쇼핑<span class="caption_font_number">5</span></td>
+                    </tr>
                     <tr>
                         <td>네이버쇼핑</td>
                         <td>네이버장보기</td>
@@ -194,7 +201,9 @@
             </div>
             <div id="top_left_button_menu8">
                 <table>
-                    <caption class="caption_font_bold">멤버십<span>2</span></caption>
+                    <tr>
+                        <td colspan="2" class="caption_font_bold">멤버십<span class="caption_font_number">2</span></td>
+                    </tr>
                     <tr>
                         <td>멤버십</td>
                         <td>멤버십스튜던트</td>
@@ -203,7 +212,9 @@
             </div>
             <div id="top_left_button_menu9">
                 <table>
-                    <caption class="caption_font_bold">내도구<span>7</span></caption>
+                    <tr>
+                        <td colspan="2" class="caption_font_bold">내도구<span class="caption_font_number">7</span></td>
+                    </tr>
                     <tr>
                         <td>메모</td>
                         <td>메일</td>
@@ -223,7 +234,9 @@
             </div>
             <div id="top_left_button_menu10">
                 <table>
-                    <caption class="caption_font_bold">인증<span>6</span></caption>
+                    <tr>
+                        <td colspan="2" class="caption_font_bold">인증<span class="caption_font_number">6</span></td>
+                    </tr>
                     <tr>
                         <td>네이버 자격증</td>
                         <td>네이버 출입증</td>
@@ -240,7 +253,9 @@
             </div>
             <div id="top_left_button_menu11">
                 <table>
-                    <caption class="caption_font_bold">커뮤니티·콘텐츠<span>7</span></caption>
+                    <tr>
+                        <td colspan="2" class="caption_font_bold">커뮤니티·콘텐츠<span class="caption_font_number">7</span></td>
+                    </tr>
                     <tr>
                         <td>밴드</td>
                         <td>블로그</td>
@@ -260,7 +275,9 @@
             </div>
             <div id="top_left_button_menu12">
                 <table>
-                    <caption class="caption_font_bold">지도·여행<span>5</span></caption>
+                    <tr>
+                        <td colspan="2" class="caption_font_bold">지도·여행<span class="caption_font_number">5</span></td>
+                    </tr>
                     <tr>
                         <td>네이버예약</td>
                         <td>지도</td>
@@ -276,7 +293,9 @@
             </div>
             <div id="top_left_button_menu13">
                 <table>
-                    <caption class="caption_font_bold">사전·지식<span>4</span></caption>
+                    <tr>
+                        <td colspan="2" class="caption_font_bold">사전·지식<span class="caption_font_number">4</span></td>
+                    </tr>
                     <tr>
                         <td>사전</td>
                         <td>엑스퍼트</td>
@@ -289,7 +308,9 @@
             </div>
             <div id="top_left_button_menu14">
                 <table>
-                    <caption class="caption_font_bold">파트너서비스<span>14</span></caption>
+                    <tr>
+                        <td colspan="2" class="caption_font_bold">파트너서비스<span class="caption_font_number">14</span></td>
+                    </tr>
                     <tr>
                         <td class="menu14_font_bold">창작자 지원</td>
                     </tr>
