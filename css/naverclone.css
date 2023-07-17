@@ -627,9 +627,6 @@ footer {
   border-radius: 15px;
 }
 
-/* #top_left_button_menu::-webkit-scrollbar {
-  margin-right: 5px;
-} */
 
 #top_left_button_menu.show {
   opacity: 1;
@@ -661,11 +658,11 @@ footer {
   table-layout: fixed;
   font-size: 1rem;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 #top_left_button_menu div table tr td {
-  border: 1px solid black; /* 임시 선 */
   padding: 0px;
   padding-left: 10px;
   margin-top: -5px;
@@ -679,7 +676,7 @@ footer {
   background-color: rgb(238, 242, 249);
   font-weight: 700;
   font-size: 1.2rem;
-
+  border-radius: 5px;
 }
 
 .menu14_font_bold {
@@ -708,6 +705,13 @@ footer {
 }
 
 .top_left_button_menu_icon {
-  height: 25px;
-  width: 25px;
+  height: 40px;
+  width: 40px;
+}
+
+.top_left_button_menu_icon_text {
+  display: inline-block;
+  position: relative;
+  top: -13px;
+  left: 2px;
 }
