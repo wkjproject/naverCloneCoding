@@ -634,7 +634,20 @@ footer {
 }
 
 
-#top_left_button_menu>div {
+#top_left_button_menu1,
+#top_left_button_menu2,
+#top_left_button_menu3,
+#top_left_button_menu4,
+#top_left_button_menu5,
+#top_left_button_menu6,
+#top_left_button_menu7,
+#top_left_button_menu8,
+#top_left_button_menu9,
+#top_left_button_menu10,
+#top_left_button_menu11,
+#top_left_button_menu12,
+#top_left_button_menu13,
+#top_left_button_menu14 {
   margin-bottom: 20px;
 }
 
@@ -654,7 +667,7 @@ footer {
   font-size: 1.3rem;
 }
 
-#top_left_button_menu>div>table {
+#top_left_button_menu_table {
   table-layout: fixed;
   font-size: 1rem;
   width: 100%;
@@ -662,13 +675,12 @@ footer {
   border-radius: 5px;
 }
 
-#top_left_button_menu div table tr td {
-  padding: 0px;
-  padding-left: 10px;
-  margin-top: -5px;
+#icon_td {
+  padding-top: 10px;
+  padding-left: 13px;
 }
 
-#login_table tr td{
+.login_table tr td{
   text-align: center;
 }
 
@@ -677,6 +689,7 @@ footer {
   font-weight: 700;
   font-size: 1.2rem;
   border-radius: 5px;
+  height: 40px;
 }
 
 .menu14_font_bold {
