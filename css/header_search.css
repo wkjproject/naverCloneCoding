@@ -1,0 +1,259 @@
+.search_text_box {
+  width: 400px;
+  height: 24px;
+  padding: 17px;
+  font-size: 1.5rem;
+  outline: none;
+  border-left: none;
+  border-right: none;
+  border-top-color: rgb(126, 233, 126);
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-bottom-color: rgb(126, 233, 126);
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+}
+
+.search_area_box {
+  text-align: center;
+}
+
+.search_text_box_area {
+  display: inline-block;
+  align-items: center;
+  text-align: left;
+  vertical-align: middle;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+
+.search_text_box::placeholder {
+  font-size: 1.3rem;
+}
+
+.search_N_logo {
+  display: inline-block;
+  position: relative;
+  z-index: 200;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  border: 3px solid rgb(126, 233, 126);
+  border-right: none;
+  height: 58px;
+  width: 70px;
+  border-radius: 40px 0 0 40px;
+}
+
+.search_N_logo_svg {
+  width: 50%;
+  height: 50%;
+  padding-top: 14px;
+}
+
+.search_right_border {
+  display: inline-block;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  border: 3px solid rgb(126, 233, 126);
+  border-left: none;
+  height: 58px;
+  width: 110px;
+  border-radius: 0 40px 40px 0;
+  position: relative;
+}
+
+.image_container {
+  height: 58px;
+  width: 110px;
+  display: inline-block;
+  overflow: visible;
+}
+
+.header_searchbox_keyboard {
+  width: 28px;
+  height: 17px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  background-image: url("../image/header_searchbox_keyboard.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+  left: -17px;
+}
+
+.header_searchbox_keyboard::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: -21px;
+  width: 70px;
+  height: 40px;
+  background-image: url("../image/header_searchbox_keyboard_float.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.header_searchbox_triangle {
+  width: 5px;
+  height: 9px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  background-image: url("../image/header_searchbox_triangle.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 2px;
+  left: -3px;
+}
+
+.header_searchbox_glasses {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  background-image: url("../image/header_searchbox_glasses.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 12px;
+  left: 8px;
+}
+
+.header_searchbox_keyboard:hover::after {
+  opacity: 1;
+}
+
+.search_hidden_block {
+  margin: 0 auto;
+  display: none;
+  background-color: rgb(255, 248, 245);
+  width: 480px;
+  height: 35px;
+  border: 3px solid rgb(126, 233, 126);
+  border-top: none;
+  text-align: left;
+}
+
+.search_hidden_block a {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  line-height: 33px;
+  text-decoration: none;
+}
+
+.search_hidden_block a:hover {
+  text-decoration: underline;
+  color: rgb(209, 159, 255);
+}
+
+.search_hidden_block span {
+  font-size: 0.9rem;
+}
+
+#text_box_under_menu_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#text_box_under_menu_area a {
+  text-decoration: none;
+}
+
+.text_box_under_menu_text {
+  margin-top: 45px;
+  font-size: 0.68rem;
+}
+
+.text_box_under_mail {
+  background-image: url("../image/header_mail.png");
+}
+
+.text_box_under_cafe {
+  background-image: url("../image/header_cafe.png");
+}
+
+.text_box_under_blog {
+  background-image: url("../image/header_blog.png");
+}
+
+.text_box_under_shop {
+  background-image: url("../image/header_shopping.png");
+}
+
+.text_box_under_news {
+  background-image: url("../image/naver_news.png");
+}
+
+.text_box_under_stock {
+  background-image: url("../image/header_stock.png");
+}
+
+.text_box_under_estate {
+  background-image: url("../image/header_estate.png");
+}
+
+.text_box_under_map {
+  background-image: url("../image/naver_map.png");
+
+}
+
+.text_box_under_webtoon {
+  background-image: url("../image/header_webtoon.png");
+}
+
+.text_box_under_etcbutton {
+  background-image: url("../image/header_hotkey_allservice.png");
+}
+
+.text_box_under_mail,
+.text_box_under_cafe,
+.text_box_under_blog,
+.text_box_under_shop,
+.text_box_under_news,
+.text_box_under_stock,
+.text_box_under_estate,
+.text_box_under_map,
+.text_box_under_webtoon,
+.text_box_under_etcbutton {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+  position: relative;
+  z-index: 200;
+}
+
+.text_box_under_mail:hover,
+.text_box_under_cafe:hover,
+.text_box_under_blog:hover,
+.text_box_under_shop:hover,
+.text_box_under_news:hover,
+.text_box_under_stock:hover,
+.text_box_under_estate:hover,
+.text_box_under_map:hover,
+.text_box_under_webtoon:hover,
+.text_box_under_etcbutton:hover {
+  box-shadow: 2px 2px 2px rgba(25, 50, 50, 0.7);
+}

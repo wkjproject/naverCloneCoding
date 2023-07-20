@@ -1,0 +1,113 @@
+.main_grid {
+  position: relative;
+  top: -770px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.section_left {
+  width: 830px;
+  height: 2508px;
+  display: grid;
+  float: left;
+  grid-template-rows: 170px 466px 600px 1084px;
+  /* 행 지정 */
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid black;
+  /* 임시값 */
+
+}
+
+.sidebar {
+  width: 420px;
+  height: 2508px;
+  display: grid;
+  float: right;
+  grid-template-rows: 204px 280px 276px 276px 821px 96px;
+  /* 행 지정 */
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid black;
+  /* 임시값 */
+}
+
+.item_1_1 {
+  width: 830px;
+  height: 130px;
+  border: 2px solid black;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.item_1_2 {
+  width: 830px;
+  height: 426px;
+  border: 2px solid black;
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 2;
+}
+
+.item_1_3 {
+  width: 830px;
+  height: 560px;
+  border: 2px solid black;
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 2;
+}
+
+.item_1_4 {
+  width: 830px;
+  height: 1044px;
+  border: 2px solid black;
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 2;
+}
+
+.item_2_1 {
+  width: 420px;
+  height: 164px;
+  border: 2px solid black;
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 2;
+}
+
+.item_2_2 {
+  width: 420px;
+  height: 240px;
+  border: 2px solid black;
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 2;
+}
+
+.item_2_3 {
+  width: 420px;
+  height: 236px;
+  border: 2px solid black;
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 2;
+}
+
+.item_2_4 {
+  width: 420px;
+  height: 236px;
+  border: 2px solid black;
+  grid-row: 4 / span 1;
+  grid-column: 2 / span 2;
+}
+
+.item_2_5 {
+  width: 420px;
+  height: 781px;
+  border: 2px solid black;
+  grid-row: 5 / span 1;
+  grid-column: 2 / span 2;
+}
+
+.item_2_6 {
+  width: 420px;
+  height: 56px;
+  border: 2px solid black;
+  grid-row: 6 / span 1;
+  grid-column: 2 / span 2;
+}

@@ -1,0 +1,131 @@
+#top_right_area {
+  position: relative;
+}
+
+.top_right_area1 {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: -100px;
+  right: 75px;
+  overflow: visible;
+}
+
+.top_right_button1 {
+  background-image: url("../image/header_naverpay.png");
+  width: 30px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+
+.top_right_button1:hover {
+  cursor: pointer;
+}
+
+.top_right_area1::before {
+  content: "";
+  /* 가상요소 내용 */
+  position: absolute;
+  top: -6px;
+  left: -5px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(180, 172, 172, 0.5);
+  border-radius: 50%;
+  opacity: 0;
+  /* 초기투명도 */
+  transition: opacity 0.3s;
+  /* 부드러운 애니메이션 효과 */
+  pointer-events: none;
+}
+
+.top_right_area1:hover::before,
+.top_right_area1:hover::after {
+  opacity: 1;
+}
+
+.top_right_area1::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: -24px;
+  width: 80px;
+  height: 40px;
+  background-image: url("../image/header_top_right_naverpay.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.top_right_area2 {
+  width: 26px;
+  height: 26px;
+  top: -101px;
+  right: 10px;
+  position: absolute;
+  overflow: visible;
+}
+
+.top_right_button2 {
+  background-image: url("../image/header_alarm.png");
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+
+.top_right_button1:hover,
+.top_right_button2:hover {
+  cursor: pointer;
+}
+
+.top_right_area2::before {
+  content: "";
+  /* 가상요소 내용 */
+  position: absolute;
+  top: -6px;
+  left: -7.5px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(180, 172, 172, 0.5);
+  border-radius: 50%;
+  opacity: 0;
+  /* 초기투명도 */
+  transition: opacity 0.3s;
+  /* 부드러운 애니메이션 효과 */
+  pointer-events: none;
+}
+
+.top_right_area2:hover::before,
+.top_right_area2:hover::after {
+  opacity: 1;
+}
+
+.top_right_area2::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: -26px;
+  width: 80px;
+  height: 42px;
+  background-image: url("../image/header_top_right_alarm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+#top_right_area {
+  display: flex;
+  float: right;
+  margin-left: -60px;
+  margin-right: 10px;
+}
