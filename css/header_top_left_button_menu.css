@@ -5,13 +5,12 @@
   padding: 20px;
   top: -210px;
   left: 0px;
-  background-color: white;
+  background-color: rgb(248,251,252);
   opacity: 0;
   z-index: 0;
   overflow: scroll;
   visibility: hidden;
-  border: 1px solid #ddd;
-  border-radius: 15px;
+
 }
 
 
@@ -38,6 +37,37 @@
   margin-bottom: 20px;
 }
 
+#top_left_button_menu4,
+#top_left_button_menu5,
+#top_left_button_menu6,
+#top_left_button_menu7,
+#top_left_button_menu8,
+#top_left_button_menu9,
+#top_left_button_menu10,
+#top_left_button_menu11,
+#top_left_button_menu12,
+#top_left_button_menu13 {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+
+#top_left_button_menu4,
+#top_left_button_menu5,
+#top_left_button_menu6,
+#top_left_button_menu7,
+#top_left_button_menu8,
+#top_left_button_menu9,
+#top_left_button_menu10,
+#top_left_button_menu11,
+#top_left_button_menu12,
+#top_left_button_menu13,
+#top_left_button_menu14 {
+  background-color: white;
+}
+
+
+
 #top_left_button_menu1,
 #top_left_button_menu2 {
   padding-bottom: 20px;
@@ -58,8 +88,7 @@
   table-layout: fixed;
   font-size: 1rem;
   width: 100%;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border-collapse: collapse;
 }
 
 #icon_td {
@@ -75,12 +104,15 @@
   background-color: rgb(238, 242, 249);
   font-weight: 700;
   font-size: 1.2rem;
-  border-radius: 5px;
   height: 40px;
+  padding-left: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .menu14_font_bold {
   font-weight: 600;
+  padding-left: 10px;
 }
 
 .caption_font_number {
@@ -116,4 +148,8 @@
   left: 2px;
 }
 
-
+#top_left_button_footer {
+  position: relative;
+  text-align: center;
+  left: -12px;
+}
