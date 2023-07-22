@@ -18,7 +18,6 @@ triangle_button.addEventListener("click", show_hidden_block);
 
 const top_left_button = document.querySelector('.top_left_button');
 
-
 top_left_button.addEventListener('click', () => {
     const top_left_button_menu = document.querySelector('#top_left_button_menu')
     const text_box_under_mail = document.querySelector('.text_box_under_mail');

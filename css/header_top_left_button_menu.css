@@ -165,3 +165,14 @@
   text-align: center;
   left: -12px;
 }
+
+#top_left_service_search_area {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  z-index: 9999;
+}
