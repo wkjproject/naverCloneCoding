@@ -2,14 +2,20 @@
   position: relative;
   width: 400px;
   height: 740px;
-  padding: 20px;
+  padding: 6px;
   top: -210px;
   left: 0px;
   background-color: rgb(248,251,252);
   opacity: 0;
   z-index: 0;
-  overflow: scroll;
   visibility: hidden;
+  border-radius: 10px;
+}
+
+#top_left_button_iframe {
+  overflow: hidden;
+  height: 740px;
+  width: 404px;
 
 }
 
@@ -18,7 +24,9 @@
   opacity: 1;
   visibility:visible;
 }
-
+#top_left_button_menu1 {
+  margin-top: 13px;
+}
 
 #top_left_button_menu1,
 #top_left_button_menu2,
