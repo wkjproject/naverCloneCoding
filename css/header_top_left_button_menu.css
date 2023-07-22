@@ -144,6 +144,10 @@
   width: 15px;
 }
 
+.service_search {
+  cursor: pointer;
+}
+
 .top_left_button_menu_icon {
   height: 40px;
   width: 40px;
