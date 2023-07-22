@@ -10,6 +10,7 @@
   z-index: 0;
   visibility: hidden;
   border-radius: 10px;
+
 }
 
 #top_left_button_iframe {
@@ -19,6 +20,13 @@
 
 }
 
+#top_left_button_menu_body {
+  display: block;
+}
+
+#top_left_button_menu_body.display {
+  display: none;
+}
 
 #top_left_button_menu.show {
   opacity: 1;
@@ -167,13 +175,14 @@
 }
 
 #top_left_service_search_area {
-  position: fixed;
-  background-color: white;
+  position: absolute;
+  background-color: rgb(248,251,252);
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   display: none;
+  z-index: 999;
 }
 #top_left_service_search {
   margin-top: 10px;
@@ -191,6 +200,7 @@
   height: 45px;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 #top_left_service_search_back {
@@ -209,12 +219,429 @@
   font-size: 1rem;
 }
 
-#top_left_service_search_area li {
+.top_left_service_li {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-#hangle_ga img {
+.hangle_content_img {
+  height: 50px;
+  width: 50px;
   margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.hangle_content_img_area1 {
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683617098465dvjGb.png');
+}
+.hangle_content_img_area2 {
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683512696361X4su0.png');
+}
+.hangle_content_img_area3 {
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616735690eeUDp.png');
+}
+.hangle_content_img_area4 {
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616803784QWNNH.png');
+}
+.hangle_content_img_area5 {
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615143240N24qS.png');
+}
+.hangle_content_img_area6 {
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683617800660oN5OY.png');
+}
+.hangle_content_img_area7 {
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683618149927MCVeJ.png');
+}
+.hangle_content_img_area8 {
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683617747429piZnP.png');
+}
+.hangle_content_img_area9 {
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683617826809hOiK6.png');
+}
+.hangle_content_img_area10 {
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230510_0/upload_16836812177313KWUz.png');
+}
+.hangle_content_img_area11 {
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230518_0/upload_1684380497154jL2dG.png');
+}
+.hangle_content_img_area12 {
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683617185863evnZ0.png');
+}
+.hangle_content_img_area13 {
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616260278Z2lsz.png');
+}
+.hangle_content_img_area14 {
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615217885SHe8e.png');
+}
+.hangle_content_img_area15{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614900685OWTKR.png');
+}
+.hangle_content_img_area16{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683617133166p3OFd.png');
+}
+.hangle_content_img_area17{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615291801u4R5u.png');
+}
+.hangle_content_img_area18{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_16836183028103WnN7.png');
+}
+.hangle_content_img_area19{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615629697xqe8h.png');
+}
+.hangle_content_img_area20{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615106921rd5tr.png');
+}
+.hangle_content_img_area21{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683512720230Vr2gk.png');
+}
+.hangle_content_img_area22{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683549920905k1IDB.png');
+}
+.hangle_content_img_area23{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616828755X4Iuc.png');
+}
+.hangle_content_img_area24{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683551416669XehIN.png');
+}
+.hangle_content_img_area25{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683512735589CG8MR.png');
+}
+.hangle_content_img_area26{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683617071877VCPTX.png');
+}
+.hangle_content_img_area27{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683550715923j5cau.png');
+}
+.hangle_content_img_area28{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230512_0/upload_1683895580373TLt1N.png');
+}
+.hangle_content_img_area29{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_16835127488747T48B.png');
+}
+.hangle_content_img_area30{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230511_0/upload_16837689957588YkaZ.png');
+}
+.hangle_content_img_area31{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_168351276098193Tbw.png');
+}
+.hangle_content_img_area32{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683613850457bw2o6.png');
+}
+.hangle_content_img_area33{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614331473O5jI4.png');
+}
+.hangle_content_img_area34{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615320878aGFHx.png');
+}
+.hangle_content_img_area35{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230612_0/upload_1686566876952lEdob.png');
+}
+.hangle_content_img_area36{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_16835512150393XM8L.png');
+}
+.hangle_content_img_area37{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683550575043TIDKu.png');
+}
+.hangle_content_img_area38{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230512_0/upload_16838622244122SLac.png');
+}
+.hangle_content_img_area39{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683551768682QFSEX.png');
+}
+.hangle_content_img_area40{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614392358aTKH4.png');
+}
+.hangle_content_img_area41{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683550752349ibr4O.png');
+}
+.hangle_content_img_area42{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683612465082REJCb.png');
+}
+.hangle_content_img_area43{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_16836153967537rYTc.png');
+}
+.hangle_content_img_area44{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615487317xQFwr.png');
+}
+.hangle_content_img_area45{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683512778227WEptc.png');
+}
+.hangle_content_img_area46{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614686949xgRjs.png');
+}
+.hangle_content_img_area47{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615264598b415E.png');
+}
+.hangle_content_img_area48{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683513334042oAngi.png');
+}
+.hangle_content_img_area49{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683550662974jrgSk.png');
+}
+.hangle_content_img_area50{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615237323Nosgw.png');
+}
+.hangle_content_img_area51{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683512816030ml4s1.png');
+}
+.hangle_content_img_area52{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683512791912c66Bt.png');
+}
+.hangle_content_img_area53{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230510_0/upload_1683708863361M2AQw.png');
+}
+.hangle_content_img_area54{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683550478776Y0d76.png');
+}
+.hangle_content_img_area55{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_168355187520024oc2.png');
+}
+.hangle_content_img_area56{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615170126wWXeF.png');
+}
+.hangle_content_img_area57{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_16835128325991gQ16.png');
+}
+.hangle_content_img_area58{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230510_0/upload_1683681088181XIv7l.png');
+}
+.hangle_content_img_area59{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616152377eJdtJ.png');
+}
+.hangle_content_img_area60{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_16835506274568ERbn.png');
+}
+.hangle_content_img_area61{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_16835509847204e2Xk.png');
+}
+.hangle_content_img_area62{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614739861vDRPT.png');
+}
+.hangle_content_img_area63{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683512901998JXieG.png');
+}
+.hangle_content_img_area64{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616704365Ru4xy.png');
+}
+.hangle_content_img_area65{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230512_0/upload_1683895476935LO4gB.png');
+}
+.hangle_content_img_area66{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_16835132331457MoRx.png');
+}
+.hangle_content_img_area67{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683513249224LbMHz.png');
+}
+.hangle_content_img_area68{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230510_0/upload_1683708909770BahvI.png');
+}
+.hangle_content_img_area69{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230510_0/upload_1683713854937ntB6t.png');
+}
+.hangle_content_img_area70{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683549953070ouPCO.png');
+}
+.hangle_content_img_area71{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616227176TNAGo.png');
+}
+.hangle_content_img_area72{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230510_0/upload_1683681127518vZnW6.png');
+}
+.hangle_content_img_area73{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683513265061ZlQTx.png');
+}
+.hangle_content_img_area74{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683613799474ne12a.png');
+}
+.hangle_content_img_area75{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615590728zY7NF.png');
+}
+.hangle_content_img_area76{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683617234427hnC72.png');
+}
+.hangle_content_img_area77{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616560988hWI8N.png');
+}
+.hangle_content_img_area78{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683513103653t9xyJ.png');
+}
+.hangle_content_img_area79{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683513133610WZRzG.png');
+}
+.hangle_content_img_area80{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683613735500G9Cse.png');
+}
+.hangle_content_img_area81{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230510_0/upload_1683681150623udegV.png');
+}
+.hangle_content_img_area82{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614298941S8yx8.png');
+}
+.hangle_content_img_area83{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616660536vfwCx.png');
+}
+.hangle_content_img_area84{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683549717127qGBCT.png');
+}
+.hangle_content_img_area85{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614422094ZcWtj.png');
+}
+.hangle_content_img_area86{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614926165mMAgR.png');
+}
+.hangle_content_img_area87{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683513165674OA3Mb.png');
+}
+.hangle_content_img_area88{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614576753lb5EA.png');
+}
+.hangle_content_img_area89{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614778670w8zOW.png');
+}
+.hangle_content_img_area90{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683550070443DbDIM.png');
+}
+.hangle_content_img_area91{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683513288476mZ9PY.png');
+}
+.hangle_content_img_area92{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683513431274TZGKC.png');
+}
+.hangle_content_img_area93{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615368135Oq7ZA.png');
+}
+.hangle_content_img_area94{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614031341REs6q.png');
+}
+.hangle_content_img_area95{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683617253614qqnvS.png');
+}
+.hangle_content_img_area96{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683550519929FdlDQ.png');
+}
+.hangle_content_img_area97{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683551719395ihF91.png');
+}
+.hangle_content_img_area98{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_168355093344710o4E.png');
+}
+.hangle_content_img_area99{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683613690902Si7D2.png');
+}
+.hangle_content_img_area100{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230510_0/upload_1683681172180R6V48.png');
+}
+.hangle_content_img_area101{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616624310uSVHo.png');
+}
+.hangle_content_img_area102{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683513301658Cs9Po.png');
+}
+.hangle_content_img_area103{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615339843J4NUW.png');
+}
+.hangle_content_img_area104{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230511_0/upload_1683792684691mct2W.png');
+}
+.hangle_content_img_area105{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683550904973yHe3B.png');
+}
+.hangle_content_img_area106{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_16836154583110Jqqu.png');
+}
+.hangle_content_img_area107{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683550780477lDZeM.png');
+}
+.hangle_content_img_area108{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615540983hJCEd.png');
+}
+.hangle_content_img_area109{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683550955231YOA4X.png');
+}
+.hangle_content_img_area110{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230510_0/upload_1683681245345wUu01.png');
+}
+.hangle_content_img_area111{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616502827z1zjI.png');
+}
+.hangle_content_img_area112{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230512_0/upload_16838955176477dimq.png');
+}
+.hangle_content_img_area113{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230515_0/upload_1684145310538UE0f6.png');
+}
+.hangle_content_img_area114{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683551003855enAMi.png');
+}
+.hangle_content_img_area115{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683549865342z7fXz.png');
+}
+.hangle_content_img_area116{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614810325u9WG0.png');
+}
+.hangle_content_img_area117{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614272050YBUxG.png');
+}
+.hangle_content_img_area118{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683617576059aFrqZ.png');
+}
+.hangle_content_img_area119{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614366871e1viK.png');
+}
+.hangle_content_img_area120{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614870975XFbKW.png');
+}
+.hangle_content_img_area121{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683613879082NqPl6.png');
+}
+.hangle_content_img_area122{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683551639339JtPNk.png');
+}
+.hangle_content_img_area123{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230510_0/upload_1683702840938PLZdO.png');
+}
+.hangle_content_img_area124{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230510_0/upload_1683701121444UMi0Y.png');
+}
+.hangle_content_img_area125{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615192069PNz1Q.png');
+}
+.hangle_content_img_area126{
+  background-image: url('https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614990809zc0tj.png');
+}
+.hangle_content {
+  border-bottom: 1px solid #ddd;
+  width: 260px;
+}
+
+.hangle_content_title {
+  margin-bottom: -11px;
+  font-size: 1rem;
+}
+
+.hangle_title_area {
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.top_left_service_ul {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.hangle_content_description {
+  font-size: 0.8rem;
+}
+
+.hangle_span {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.hangle_number {
+  font-size: 1rem;
+  color: rgb(83,125,226);
+  font-weight: 900;
 }

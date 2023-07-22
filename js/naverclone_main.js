@@ -25,6 +25,15 @@ top_left_button.addEventListener('click', () => {
     const search_N_logo = document.querySelector('.search_N_logo');
     top_left_button.classList.toggle('focus');
     top_left_button.focus();
+    
+    /* 클릭하면 top_left_button_iframe 의 top_left_service_search_area.style.display = 'none'; 처리 */
+    /* 클릭하면 top_left_button_menu_body.classList.remove('display') */
+    let top_left_button_iframe = document.querySelector('#top_left_button_iframe');
+    let top_left_button_iframe_document = top_left_button_iframe.contentDocument;
+    let top_left_service_search_area = top_left_button_iframe_document.querySelector('#top_left_service_search_area');
+    top_left_service_search_area.style.display = 'none';
+    let top_left_button_menu_body = top_left_button_iframe_document.querySelector('#top_left_button_menu_body');
+    top_left_button_menu_body.classList.remove('display');
 
     if (top_left_button_menu.classList.contains('show')) {
         top_left_button_menu.classList.remove('show');
@@ -54,20 +63,3 @@ document.addEventListener('click', (event) => {
         top_left_button_menu.style.zIndex = '0';
     }
 });
-
-/* .service_search 를 클릭하면  #top_left_service_search_area 의 display가 block */
-let service_search = document.querySelector('.service_search');
-
-service_search.addEventListener('click',function() {
-    let top_left_service_search_area = document.querySelector('#top_left_service_search_area');
-    top_left_service_search_area.style.display = 'block';
-})
-
-/* #top_left_service_search_back 를 클릭하면 #top_left_service_search_area 의 display가 none */
-
-let top_left_service_search_back = document.querySelector('#top_left_service_search_back');
-
-top_left_service_search_back.addEventListener('click', function () {
-    let top_left_service_search_area = document.querySelector('#top_left_service_search_area');
-    top_left_service_search_area.style.display = 'none';
-})
