@@ -38,6 +38,13 @@
 
 #top_left_button_menu1,
 #top_left_button_menu2,
+#top_left_button_menu3 {
+  margin-left: 5px;
+}
+
+
+#top_left_button_menu1,
+#top_left_button_menu2,
 #top_left_button_menu3,
 #top_left_button_menu4,
 #top_left_button_menu5,
@@ -145,6 +152,7 @@
   line-height: 33px;
   font-size: 1rem;
   float: right;
+  margin-right: 10px;
 }
 
 .service_search_icon {
