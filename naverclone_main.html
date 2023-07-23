@@ -27,34 +27,28 @@
       </div>
 
       <div id="search_area" class="search_area_box">
-        <div id="search_logo" class="search_N_logo">
-          <a href="http://www.naver.com">
-            <img src="./image/header_searchbox_N_Logo.svg" alt="naver_logo" class="search_N_logo_svg">
-          </a>
-        </div>
-        <div id="search" class="search_text_box_area">
-          <form action="http://search.naver.com/search.naver" method="get" id="search_form">
-            <input type="text" class="search_text_box" name="query" placeholder="검색어를 입력해주세요." autofocus>
-          </form>
-        </div>
-        <div id="search_right_border" class="search_right_border">
-          <div class="image_container">
+        <ul class="search_area_box_ul">
+          <li id="search_logo" class="search_area_box_li"><a href="http://www.naver.com">
+              <img src="./image/header_searchbox_N_Logo.svg" alt="naver_logo" class="search_N_logo_svg">
+            </a>
+          </li>
+          <li id="p_l" class="search_area_box_li">
+            <p class="span_l_class">|</p>
+          </li>
+          <li id="search" class="search_area_box_li">
+            <form action="http://search.naver.com/search.naver" method="get" id="search_form">
+              <input type="text" class="search_text_box" name="query" placeholder="검색어를 입력해주세요." autofocus>
+            </form>
+          </li>
+          <li id="search_right_border" class="search_area_box_li">
             <button type="button" alt="header_searchbox_keyboard" id="header_searchbox_image_keyboard"
               class="header_searchbox_keyboard"></button>
             <button type="button" alt="header_searchbox_triangle" id="header_searchbox_image_triangle"
               class="header_searchbox_triangle"></button>
             <button type="submit" form="search_form" header_searchbox_glasses" id="header_searchbox_image_glasses"
               class="header_searchbox_glasses"></button>
-          </div>
-        </div>
-        <div id="search_hidden" class="search_hidden_block"> <!-- 트라이앵글 누르면 밑에 나오는 히든블록 -->
-          <a href="https://help.naver.com/service/5627/category/3904?lang=ko" target="_blank">
-            <span>도움말</span>
-          </a>
-          <a href="https://help.naver.com/service/5627/category/3905?lang=ko" target="_blank">
-            <span>신고</span>
-          </a>
-        </div>
+          </li>
+        </ul>
       </div>
       <div id="top_right_area" class="top_right-area">
         <div id="top_right1" class="top_right_area1">
@@ -64,62 +58,159 @@
           <button type="button" class="top_right_button2"></button>
         </div>
       </div>
-      <div id="text_box_under_menu_area" class="text_box_under_menu_area">
-        <a href="https://mail.naver.com/">
-          <button type="button" class="text_box_under_mail">
-            <span class="text_box_under_menu_text">메일</span>
+      <div id="text_box_under_area">
+        <div id="text_box_under_menu_area" class="text_box_under_menu_area">
+          <a href="https://mail.naver.com/" class="text_box_under_menu_area_a">
+            <button type="button" id="text_box_under_mail" class="text_box_under_menu_area_button">
+              <span class="text_box_under_menu_text">메일</span>
+            </button>
+          </a>
+          <a href="https://cafe.naver.com/" class="text_box_under_menu_area_a">
+            <button type="button" id="text_box_under_cafe" class="text_box_under_menu_area_button">
+              <span class="text_box_under_menu_text">카페</span>
+            </button>
+          </a>
+          <a href="https://blog.naver.com/" class="text_box_under_menu_area_a">
+            <button type="button" id="text_box_under_blog" class="text_box_under_menu_area_button">
+              <span class="text_box_under_menu_text">블로그</span>
+            </button>
+          </a>
+          <a href="https://shopping.naver.com/home" class="text_box_under_menu_area_a">
+            <button type="button" id="text_box_under_shop" class="text_box_under_menu_area_button">
+              <span class="text_box_under_menu_text">쇼핑</span>
+            </button>
+          </a>
+          <a href="https://news.naver.com/" class="text_box_under_menu_area_a">
+            <button type="button" id="text_box_under_news" class="text_box_under_menu_area_button">
+              <span class="text_box_under_menu_text">뉴스</span>
+            </button>
+          </a>
+          <a href="https://finance.naver.com/" class="text_box_under_menu_area_a">
+            <button type="button" id="text_box_under_stock" class="text_box_under_menu_area_button">
+              <span class="text_box_under_menu_text">증권</span>
+            </button>
+          </a>
+          <a href="https://land.naver.com/" class="text_box_under_menu_area_a">
+            <button type="button" id="text_box_under_estate" class="text_box_under_menu_area_button">
+              <span class="text_box_under_menu_text">부동산</span>
+            </button>
+          </a>
+          <a href="https://map.naver.com/" class="text_box_under_menu_area_a">
+            <button type="button" id="text_box_under_map" class="text_box_under_menu_area_button">
+              <span class="text_box_under_menu_text">지도</span>
+            </button>
+          </a>
+          <a href="https://comic.naver.com/" class="text_box_under_menu_area_a">
+            <button type="button" id="text_box_under_webtoon" class="text_box_under_menu_area_button">
+              <span class="text_box_under_menu_text">웹툰</span>
+            </button>
+          </a>
+          <button type="button" id="text_box_under_etcbutton" class="text_box_under_menu_area_button">
           </button>
+        </div>
+      </div>
+      <!-- etcbutton 누르면 밑에 나오는 히든블록 -->
+      <div id="search_hidden_allservice">
+        <div id="search_hidden_allservice_textcontent_box">
+          <p id="search_hidden_allservice_textcontent">전체서비스 &gt;</p>
+        </div>
+        <ul id="search_hidden_allservice_ul">
+          <li id="search_hidden_allservice_weather" class="search_hidden_allservice_li">
+            <img src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615143240N24qS.png" alt=""
+              class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">날씨</p>
+          <li id="search_hidden_allservice_navergame" class="search_hidden_allservice_li"><img
+              src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616260278Z2lsz.png" alt=""
+              class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">네이버게임</p>
+          </li>
+          <li id="search_hidden_allservice_naverpay" class="search_hidden_allservice_li"><img
+              src="./image/header_naverpay.png" alt="" class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">네이버페이</p>
+          </li>
+          <li id="search_hidden_allservice_navertv" class="search_hidden_allservice_li"><img
+              src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615629697xqe8h.png" alt=""
+              class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">네이버TV</p>
+          </li>
+          <li id="search_hidden_allservice_book" class="search_hidden_allservice_li"><img
+              src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616828755X4Iuc.png" alt=""
+              class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">도서</p>
+          </li>
+          <li id="search_hidden_allservice_band" class="search_hidden_allservice_li"><img
+              src="https://s.pstatic.net/static/www/mobile/edit/20230512_0/upload_16838622244122SLac.png" alt=""
+              class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">밴드</p>
+          </li>
+          <li id="search_hidden_allservice_diction" class="search_hidden_allservice_li"><img
+              src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614686949xgRjs.png" alt=""
+              class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">사전</p>
+          </li>
+          <li id="search_hidden_allservice_shoplive" class="search_hidden_allservice_li"><img
+              src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615237323Nosgw.png" alt=""
+              class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">쇼핑라이브</p>
+          </li>
+          <li id="search_hidden_allservice_sport" class="search_hidden_allservice_li"><img
+              src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615170126wWXeF.png" alt=""
+              class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">스포츠</p>
+          </li>
+          <li id="search_hidden_allservice_series" class="search_hidden_allservice_li"><img
+              src="https://s.pstatic.net/static/www/mobile/edit/20230510_0/upload_1683681088181XIv7l.png" alt=""
+              class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">시리즈</p>
+          </li>
+          <li id="search_hidden_allservice_webnov" class="search_hidden_allservice_li"><img
+              src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616227176TNAGo.png" alt=""
+              class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">웹소설</p>
+          </li>
+          <li id="search_hidden_allservice_knowle" class="search_hidden_allservice_li"><img
+              src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614778670w8zOW.png" alt=""
+              class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">지식iN</p>
+          </li>
+          <li id="search_hidden_allservice_calen" class="search_hidden_allservice_li"><img
+              src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614031341REs6q.png" alt=""
+              class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">캘린더</p>
+          </li>
+          <li id="search_hidden_allservice_happyb" class="search_hidden_allservice_li"><img
+              src="https://s.pstatic.net/static/www/mobile/edit/20230515_0/upload_1684145310538UE0f6.png" alt=""
+              class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">해피빈</p>
+          </li>
+          <li id="search_hidden_allservice_mybox" class="search_hidden_allservice_li"><img
+              src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683613879082NqPl6.png" alt=""
+              class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">MYBOX</p>
+          </li>
+          <li id="search_hidden_allservice_vibe" class="search_hidden_allservice_li"><img
+              src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614990809zc0tj.png" alt=""
+              class="search_hidden_allservice_icon">
+            <p class="search_hidden_allservice_icon_text">VIBE</p>
+          </li>
+        </ul>
+      </div>
+      <!-- 트라이앵글 누르면 밑에 나오는 히든블록 -->
+      <div id="search_hidden" class="search_hidden_block">
+        <a href="https://help.naver.com/service/5627/category/3904?lang=ko" target="_blank">
+          <span>도움말</span>
         </a>
-        <a href="https://cafe.naver.com/">
-          <button type="button" class="text_box_under_cafe">
-            <span class="text_box_under_menu_text">카페</span>
-          </button>
+        <a href="https://help.naver.com/service/5627/category/3905?lang=ko" target="_blank">
+          <span>신고</span>
         </a>
-        <a href="https://blog.naver.com/">
-          <button type="button" class="text_box_under_blog">
-            <span class="text_box_under_menu_text">블로그</span>
-          </button>
-        </a>
-        <a href="https://shopping.naver.com/home">
-          <button type="button" class="text_box_under_shop">
-            <span class="text_box_under_menu_text">쇼핑</span>
-          </button>
-        </a>
-        <a href="https://news.naver.com/">
-          <button type="button" class="text_box_under_news">
-            <span class="text_box_under_menu_text">뉴스</span>
-          </button>
-        </a>
-        <a href="https://finance.naver.com/">
-          <button type="button" class="text_box_under_stock">
-            <span class="text_box_under_menu_text">증권</span>
-          </button>
-        </a>
-        <a href="https://land.naver.com/">
-          <button type="button" class="text_box_under_estate">
-            <span class="text_box_under_menu_text">부동산</span>
-          </button>
-        </a>
-        <a href="https://map.naver.com/">
-          <button type="button" class="text_box_under_map">
-            <span class="text_box_under_menu_text">지도</span>
-          </button>
-        </a>
-        <a href="https://comic.naver.com/">
-          <button type="button" class="text_box_under_webtoon">
-            <span class="text_box_under_menu_text">웹툰</span>
-          </button>
-        </a>
-        <button type="button" class="text_box_under_etcbutton"></button>
-        </button>
       </div>
     </header>
 
-<!-- aside가 iframe으로 들어갈 장소 -->
+    <!-- aside가 iframe으로 들어갈 장소 -->
     <aside id="top_left_button_menu">
       <iframe id="top_left_button_iframe" src="./naverclone_aside.html" frameborder="0"></iframe>
     </aside>
-    
+
     <main id=main_grid class="main_grid">
       <section id="section_left" class="section_left">
         <div id="section_left" class="section_left">
