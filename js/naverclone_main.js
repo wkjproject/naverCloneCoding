@@ -103,3 +103,4 @@ document.addEventListener('click', function(event) {
         search_hidden_block.style.display = 'none';
     }
 });
+

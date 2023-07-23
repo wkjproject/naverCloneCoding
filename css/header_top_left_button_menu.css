@@ -1,3 +1,10 @@
+.top_left_button_menu_a {
+  color: black;
+}
+.top_left_button_menu_a:visited {
+  color: black;
+}
+
 #top_left_button_menu {
   position: relative;
   width: 400px;

@@ -59,7 +59,7 @@ function progress_search(target,query) {
     return true;
 }
 
-console.log(progress_search('검색어','겅삭아'));
+
 const top_left_service_search_input = document.querySelector('#top_left_service_search_input');
 const top_left_service_li = document.querySelectorAll('.top_left_service_li');
 
