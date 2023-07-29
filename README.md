@@ -11,5 +11,5 @@ HTML
 CSS
 JAVASCRIPT
 # 네이밍룰
-
+[네이밍룰 Wiki](https://github.com/wkjproject/personal/wiki/Naming-Rule)
 # 주요기능
