@@ -13,3 +13,5 @@ JAVASCRIPT
 # 네이밍룰
 [네이밍룰 Wiki](https://github.com/wkjproject/personal/wiki/Naming-Rule)
 # 주요기능
+iframe 모달창
+형태소 분해 검색기
