@@ -1,8 +1,10 @@
-#top_right_area {
+#main_t_r_box__ {
   position: relative;
+  margin-left: -60px;
+  margin-right: 10px;
 }
 
-.top_right_area1 {
+.main_t_r_box_npay {
   width: 26px;
   height: 26px;
   position: absolute;
@@ -11,7 +13,7 @@
   overflow: visible;
 }
 
-.top_right_button1 {
+.main_t_r_ico_npay {
   background-image: url("../image/header_naverpay.png");
   width: 30px;
   height: 26px;
@@ -20,11 +22,11 @@
   border: none;
 }
 
-.top_right_button1:hover {
+.main_t_r_ico_npay:hover {
   cursor: pointer;
 }
 
-.top_right_area1::before {
+.main_t_r_box_npay::before {
   content: "";
   /* 가상요소 내용 */
   position: absolute;
@@ -41,12 +43,12 @@
   pointer-events: none;
 }
 
-.top_right_area1:hover::before,
-.top_right_area1:hover::after {
+.main_t_r_box_npay:hover::before,
+.main_t_r_box_npay:hover::after {
   opacity: 1;
 }
 
-.top_right_area1::after {
+.main_t_r_box_npay::after {
   content: "";
   position: absolute;
   top: 35px;
@@ -62,7 +64,7 @@
   pointer-events: none;
 }
 
-.top_right_area2 {
+.main_t_r_box_bell {
   width: 26px;
   height: 26px;
   top: -101px;
@@ -71,7 +73,7 @@
   overflow: visible;
 }
 
-.top_right_button2 {
+.main_t_r_ico_bell {
   background-image: url("../image/header_alarm.png");
   width: 26px;
   height: 26px;
@@ -80,12 +82,12 @@
   border: none;
 }
 
-.top_right_button1:hover,
-.top_right_button2:hover {
+.main_t_r_ico_npay:hover,
+.main_t_r_ico_bell:hover {
   cursor: pointer;
 }
 
-.top_right_area2::before {
+.main_t_r_box_bell::before {
   content: "";
   /* 가상요소 내용 */
   position: absolute;
@@ -102,12 +104,12 @@
   pointer-events: none;
 }
 
-.top_right_area2:hover::before,
-.top_right_area2:hover::after {
+.main_t_r_box_bell:hover::before,
+.main_t_r_box_bell:hover::after {
   opacity: 1;
 }
 
-.top_right_area2::after {
+.main_t_r_box_bell::after {
   content: "";
   position: absolute;
   top: 35px;
@@ -123,9 +125,3 @@
   pointer-events: none;
 }
 
-#top_right_area {
-  display: flex;
-  float: right;
-  margin-left: -60px;
-  margin-right: 10px;
-}

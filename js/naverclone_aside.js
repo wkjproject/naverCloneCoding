@@ -1,26 +1,26 @@
-/* .service_search 를 클릭하면  #top_left_service_search_area 의 display가 block */
-let service_search = document.querySelector('.service_search');
+/* .aside_t_allservice_txt 를 클릭하면  #aside_t_r_box__ 의 display가 block */
+let aside_t_allservice_txt = document.querySelector('.aside_t_allservice_txt');
 
-service_search.addEventListener('click',function() {
-    let top_left_service_search_area = document.querySelector('#top_left_service_search_area');
-    top_left_service_search_area.style.display = 'block';
-    let top_left_button_menu_body = document.querySelector('#top_left_button_menu_body');
-    top_left_button_menu_body.classList.add('display')
+aside_t_allservice_txt.addEventListener('click',function() {
+    let aside_t_r_box__ = document.querySelector('#aside_t_r_box__');
+    aside_t_r_box__.style.display = 'block';
+    let aside_box = document.querySelector('#aside_box');
+    aside_box.classList.add('display')
 })
 
-/* #top_left_service_search_back 를 클릭하면 #top_left_service_search_area 의 display가 none */
+/* #aisde_t_r_img_search__ 를 클릭하면 #aside_t_r_box__ 의 display가 none */
 
-let top_left_service_search_back = document.querySelector('#top_left_service_search_back');
+let aisde_t_r_img_search__ = document.querySelector('#aisde_t_r_img_search__');
 
-top_left_service_search_back.addEventListener('click', function () {
-    let top_left_service_search_area = document.querySelector('#top_left_service_search_area');
-    top_left_service_search_area.style.display = 'none';
-    let top_left_button_menu_body = document.querySelector('#top_left_button_menu_body');
-    top_left_button_menu_body.classList.remove('display')
+aisde_t_r_img_search__.addEventListener('click', function () {
+    let aside_t_r_box__ = document.querySelector('#aside_t_r_box__');
+    aside_t_r_box__.style.display = 'none';
+    let aside_box = document.querySelector('#aside_box');
+    aside_box.classList.remove('display')
 })
 
-/* #top_left_service_search_input 으로 텍스트를 입력받아 
-.hangle_content_title 의 텍스트 컨텐츠 중에서 일치하는 단어를 찾음
+/* #aisde_t_r_input_search__ 으로 텍스트를 입력받아 
+.aside_t_r_content_tit 의 텍스트 컨텐츠 중에서 일치하는 단어를 찾음
 일치하지 않는 top_left_service_li를 전체 다 가림 */
 
 // 자음 모음 분리 함수
@@ -60,22 +60,22 @@ function progress_search(target,query) {
 }
 
 
-const top_left_service_search_input = document.querySelector('#top_left_service_search_input');
-const top_left_service_li = document.querySelectorAll('.top_left_service_li');
+const aisde_t_r_input_search__ = document.querySelector('#aisde_t_r_input_search__');
+const aisde_t_r_service_list = document.querySelectorAll('.aisde_t_r_service_list');
 
-top_left_service_search_input.addEventListener('input', function () {
-    const search_text = top_left_service_search_input.value.trim().toLowerCase();
-    const hangle_title_area = document.querySelectorAll('.hangle_title_area');
+aisde_t_r_input_search__.addEventListener('input', function () {
+    const search_text = aisde_t_r_input_search__.value.trim().toLowerCase();
+    const aisde_t_r_box_tit = document.querySelectorAll('.aisde_t_r_box_tit');
 
-    /* 검색어를 입력하면 hangle_title_area display none */
-    hangle_title_area.forEach(a => {
+    /* 검색어를 입력하면 aisde_t_r_box_tit display none */
+    aisde_t_r_box_tit.forEach(a => {
         a.style.display = 'none';
     });
 
-    top_left_service_li.forEach(e => {
-        const content_text = e.querySelector('.hangle_content_title');
-        const hangle_content_title = content_text.textContent.trim().toLowerCase();
-        const hangle_content_title_jamo = _separate(hangle_content_title);
+    aisde_t_r_service_list.forEach(e => {
+        const content_text = e.querySelector('.aside_t_r_content_tit');
+        const aside_t_r_content_tit = content_text.textContent.trim().toLowerCase();
+        const hangle_content_title_jamo = _separate(aside_t_r_content_tit);
         const search_text_jamo = _separate(search_text);
 
         if (progress_search(hangle_content_title_jamo, search_text_jamo)) {

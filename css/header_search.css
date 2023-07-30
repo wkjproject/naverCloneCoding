@@ -1,4 +1,4 @@
-#search_area {
+.main_t_m_box {
   display: flex;
   margin: 0 auto;
   width:600px;
@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.search_text_box {
+.main_t_m_input {
   width: 400px;
   height: 24px;
   padding: 17px;
@@ -18,56 +18,56 @@
 }
 
 
-.search_area_box_ul {
+.main_t_m_list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#search_logo {
+#main_t_m_ico_nlogo__ {
   position: relative;
   top: -5px;
   left: -23px;
 }
 
-#p_l {
+#main_t_m_line__ {
   position: relative;
   top: -2px;
   left: -20px;
 }
 
-.span_l_class {
+.main_t_m_line_vert {
   color: #ddd;
 }
 
-.search_text_box {
+.main_t_m_input {
   position: relative;
   left: -10px;
 }
 
-.search_text_box::placeholder {
+.main_t_m_input::placeholder {
   font-size: 1.3rem;
 }
 
-.search_N_logo_svg {
+.main_t_m_ico_nlogo_svg {
   width: 50%;
   height: 50%;
   padding-top: 14px;
 }
 
-.header_searchbox_keyboard {
+.main_t_m_ico_keyboard {
   width: 28px;
   height: 17px;
   border: none;
   background: none;
   cursor: pointer;
-  background-image: url("../image/header_searchbox_keyboard.png");
+  background-image: url("../image/main_t_m_ico_keyboard.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   left: -50px;
 }
 
-.header_searchbox_keyboard::after {
+.main_t_m_ico_keyboard::after {
   content: "";
   position: absolute;
   top: 24px;
@@ -84,19 +84,13 @@
   z-index: 10000;
 }
 
-#search_right_border {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header_searchbox_triangle {
+.main_t_m_ico_triangle {
   width: 5px;
   height: 9px;
   border: none;
   background: none;
   cursor: pointer;
-  background-image: url("../image/header_searchbox_triangle.png");
+  background-image: url("../image/main_t_m_ico_triangle.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -104,24 +98,24 @@
   top: 1px;
 }
 
-.header_searchbox_glasses {
+.main_t_m_ico_glass {
   width: 30px;
   height: 30px;
   border: none;
   background: none;
   cursor: pointer;
-  background-image: url("../image/header_searchbox_glasses.png");
+  background-image: url("../image/main_t_m_ico_glass.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   left: -17px;
 }
 
-.header_searchbox_keyboard:hover::after {
+.main_t_m_ico_keyboard:hover::after {
   opacity: 1;
 }
 
-.search_hidden_block {
+.main_t_m_hid_box_triangle {
   position: relative;
   display: none;
   width: 480px;
@@ -137,7 +131,7 @@
 }
 
 
-.search_hidden_block a {
+.main_t_m_hid_box_triangle a {
   display: flex;
   align-items: center;
   margin-left: 10px;
@@ -145,30 +139,30 @@
   text-decoration: none;
 }
 
-.search_hidden_block a:hover {
+.main_t_m_hid_box_triangle a:hover {
   text-decoration: underline;
   color: rgb(209, 159, 255);
 }
 
-.search_hidden_block span {
+.main_t_m_hid_box_triangle span {
   font-size: 0.9rem;
 }
 
-#text_box_under_area {
+#main_t_m_box_nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#text_box_under_menu_area {
+#main_t_m_box_nav_box {
   display: flex;
   justify-content: center;
   margin-top: 10px;
   width: 600px;
 }
 
-.text_box_under_menu_area_a,
-.text_box_under_menu_area_button {
+.main_t_m_link,
+.main_t_m_btn {
   display: inline-block;
 }
 
@@ -182,7 +176,7 @@
   height: 80px;
 }
 
-#search_hidden_allservice {
+#main_t_m_hid_box {
   position: relative;
   width: 600px;
   height: 260px;
@@ -195,23 +189,23 @@
   left: 339px;
   display: none;
 }
-#search_hidden_allservice_textcontent_box {
+#main_t_m_hid_box_box {
   margin-bottom: -15px;
 }
-#search_hidden_allservice_textcontent {
+#main_t_m_hid_txt_allservice {
   left: -250px;
   font-weight: 900;
   margin-left: 20px;
 }
 
-#search_hidden_allservice_ul {
+#main_t_m_hid_list {
   width: 530px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
-.search_hidden_allservice_li {
+.main_t_m_hid_list_list {
   display: flex;
   align-items: center;
   width: 25%;
@@ -219,66 +213,66 @@
   text-align: center;
 }
 
-.search_hidden_allservice_icon {
+.main_t_m_hid_ico {
   width: 30px;
   height: 30px;
 }
 
-.search_hidden_allservice_icon_text {
+.main_t_m_hid_txt {
  margin-left: 10px;
 }
 
-.text_box_under_menu_area_a {
+.main_t_m_link {
   text-decoration: none;
 }
 
-.text_box_under_menu_text {
+.main_t_m_btn_txt {
   margin-top: 60px;
   font-size: 0.68rem;
 }
 
-#text_box_under_mail {
+#main_t_m_btn_mail {
   background-image: url("../image/header_mail.png");
 }
 
-#text_box_under_cafe {
+#main_t_m_btn_cafe {
   background-image: url("../image/header_cafe.png");
 }
 
-#text_box_under_blog {
+#main_t_m_btn_blog {
   background-image: url("../image/header_blog.png");
 }
 
-#text_box_under_shop {
+#main_t_m_btn_shop {
   background-image: url("../image/header_shopping.png");
 }
 
-#text_box_under_news {
+#main_t_m_btn_news {
   background-image: url("../image/naver_news.png");
 }
 
-#text_box_under_stock {
+#main_t_m_btn_stock {
   background-image: url("../image/header_stock.png");
 }
 
-#text_box_under_estate {
+#main_t_m_btn_estate {
   background-image: url("../image/header_estate.png");
 }
 
-#text_box_under_map {
+#main_t_m_btn_map {
   background-image: url("../image/naver_map.png");
 
 }
 
-#text_box_under_webtoon {
+#main_t_m_btn_webtoon {
   background-image: url("../image/header_webtoon.png");
 }
 
-#text_box_under_etcbutton {
+#main_t_m_btn_etc {
   background-image: url("../image/header_hotkey_allservice.png");
 }
 
-.text_box_under_menu_area_button {
+.main_t_m_btn {
   width: 45px;
   height: 45px;
   display: flex;
@@ -295,15 +289,15 @@
   z-index: 200;
 }
 
-.text_box_under_mail:hover,
-.text_box_under_cafe:hover,
-.text_box_under_blog:hover,
-.text_box_under_shop:hover,
-.text_box_under_news:hover,
-.text_box_under_stock:hover,
-.text_box_under_estate:hover,
-.text_box_under_map:hover,
-.text_box_under_webtoon:hover,
-.text_box_under_etcbutton:hover {
+.main_t_m_btn_mail:hover,
+.main_t_m_btn_cafe:hover,
+.main_t_m_btn_blog:hover,
+.main_t_m_btn_shop:hover,
+.main_t_m_btn_news:hover,
+.main_t_m_btn_stock:hover,
+.main_t_m_btn_estate:hover,
+.main_t_m_btn_map:hover,
+.main_t_m_btn_webtoon:hover,
+.main_t_m_btn_etc:hover {
   box-shadow: 2px 2px 2px rgba(25, 50, 50, 0.7);
 }

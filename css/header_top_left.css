@@ -1,4 +1,4 @@
-.top_left_area {
+.main_t_l_box {
   width: 26px;
   height: 26px;
   padding: 10px;
@@ -7,7 +7,7 @@
   overflow: visible;
 }
 
-.top_left_button {
+.main_t_l_btn {
   background-image: url("../image/header_topleft_menu.png");
   width: 26px;
   height: 26px;
@@ -16,11 +16,11 @@
   border: none;
 }
 
-.top_left_button:hover {
+.main_t_l_btn:hover {
   cursor: pointer;
 }
 
-.top_left_button::before {
+.main_t_l_btn::before {
   content: "";
   /* 가상요소 내용 */
   position: absolute;
@@ -37,7 +37,7 @@
   pointer-events: none;
 }
 
-.top_left_button::after {
+.main_t_l_btn::after {
   content: "";
   position: absolute;
   top: 45px;
@@ -52,15 +52,15 @@
   transition: opacity 0.3s;
 }
 
-.top_left_button:hover::before,
-.top_left_button:hover::after {
+.main_t_l_btn:hover::before,
+.main_t_l_btn:hover::after {
   opacity: 1;
 }
 
-.top_left_button:focus::before {
+.main_t_l_btn:focus::before {
   opacity: 1;
 }
 
-.top_left_button:focus::after {
+.main_t_l_btn:focus::after {
   opacity: 0;
 }

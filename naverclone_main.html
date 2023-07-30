@@ -10,193 +10,190 @@
   <link rel="stylesheet" href="./css/header_top_left.css">
   <link rel="stylesheet" href="./css/header_top_left_button_menu.css">
   <link rel="stylesheet" href="./css/header_top_right.css">
-  <link rel="stylesheet" href="./css/main_grid.css">
-  <link rel="stylesheet" href="./css/main_grid.css">
+  <link rel="stylesheet" href="./css/main_m_box.css">
+  <link rel="stylesheet" href="./css/main_m_box.css">
   <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
   <!-- 전체 컨테이너 부분 -->
-  <div id="container">
+  <div id="main_box">
 
     <!-- 헤더 부분(좌상단메뉴+검색창+검색창하단퀵메뉴+우상단 네이버페이+우상단 알림혜택) -->
     <header>
       <!-- 왼쪽 위 작대기 3줄 버튼 -->
-      <div id="top_left" class="top_left_area">
-        <button type="button" class="top_left_button" aria-haspopup="menu" aria-expanded="true"></button>
+      <div class="main_t_l_box">
+        <button type="button" class="main_t_l_btn" aria-haspopup="menu" aria-expanded="true"></button>
       </div>
 
-      <div id="search_area" class="search_area_box">
-        <ul class="search_area_box_ul">
-          <li id="search_logo" class="search_area_box_li"><a href="http://www.naver.com">
-              <img src="./image/header_searchbox_N_Logo.svg" alt="naver_logo" class="search_N_logo_svg">
+      <div class="main_t_m_box">
+        <ul class="main_t_m_list">
+          <li id="main_t_m_ico_nlogo__"><a href="http://www.naver.com">
+              <img src="./image/header_searchbox_N_Logo.svg" alt="naver_logo" class="main_t_m_ico_nlogo_svg">
             </a>
           </li>
-          <li id="p_l" class="search_area_box_li">
-            <p class="span_l_class">|</p>
+          <li id="main_t_m_line__">
+            <p class="main_t_m_line_vert">|</p>
           </li>
-          <li id="search" class="search_area_box_li">
-            <form action="http://search.naver.com/search.naver" method="get" id="search_form">
-              <input type="text" class="search_text_box" name="query" placeholder="검색어를 입력해주세요." autofocus>
+          <li>
+            <form action="http://search.naver.com/search.naver" method="get" id="main_t_m_frm">
+              <input type="text" class="main_t_m_input" name="query" placeholder="검색어를 입력해주세요." autofocus>
             </form>
           </li>
-          <li id="search_right_border" class="search_area_box_li">
-            <button type="button" alt="header_searchbox_keyboard" id="header_searchbox_image_keyboard"
-              class="header_searchbox_keyboard"></button>
-            <button type="button" alt="header_searchbox_triangle" id="header_searchbox_image_triangle"
-              class="header_searchbox_triangle"></button>
-            <button type="submit" form="search_form" header_searchbox_glasses" id="header_searchbox_image_glasses"
-              class="header_searchbox_glasses"></button>
+          <li class="main_t_m_list">
+            <button type="button" class="main_t_m_ico_keyboard"></button>
+            <button type="button" id="main_t_m_ico_triangle__" class="main_t_m_ico_triangle"></button>
+            <button type="submit" form="main_t_m_frm" class="main_t_m_ico_glass"></button>
           </li>
         </ul>
       </div>
-      <div id="top_right_area" class="top_right-area">
-        <div id="top_right1" class="top_right_area1">
-          <button type="button" class="top_right_button1"></button>
+      <div id="main_t_r_box__">
+        <div class="main_t_r_box_npay">
+          <button type="button" class="main_t_r_ico_npay"></button>
         </div>
-        <div id="top_right2" class="top_right_area2">
-          <button type="button" class="top_right_button2"></button>
+        <div class="main_t_r_box_bell">
+          <button type="button" class="main_t_r_ico_bell"></button>
         </div>
       </div>
-      <div id="text_box_under_area">
-        <div id="text_box_under_menu_area" class="text_box_under_menu_area">
-          <a href="https://mail.naver.com/" class="text_box_under_menu_area_a">
-            <button type="button" id="text_box_under_mail" class="text_box_under_menu_area_button">
-              <span class="text_box_under_menu_text">메일</span>
+      <div id="main_t_m_box_nav">
+        <div id="main_t_m_box_nav_box" class="main_t_m_box_nav_box">
+          <a href="https://mail.naver.com/" class="main_t_m_link">
+            <button type="button" id="main_t_m_btn_mail" class="main_t_m_btn">
+              <span class="main_t_m_btn_txt">메일</span>
             </button>
           </a>
-          <a href="https://cafe.naver.com/" class="text_box_under_menu_area_a">
-            <button type="button" id="text_box_under_cafe" class="text_box_under_menu_area_button">
-              <span class="text_box_under_menu_text">카페</span>
+          <a href="https://cafe.naver.com/" class="main_t_m_link">
+            <button type="button" id="main_t_m_btn_cafe" class="main_t_m_btn">
+              <span class="main_t_m_btn_txt">카페</span>
             </button>
           </a>
-          <a href="https://blog.naver.com/" class="text_box_under_menu_area_a">
-            <button type="button" id="text_box_under_blog" class="text_box_under_menu_area_button">
-              <span class="text_box_under_menu_text">블로그</span>
+          <a href="https://blog.naver.com/" class="main_t_m_link">
+            <button type="button" id="main_t_m_btn_blog" class="main_t_m_btn">
+              <span class="main_t_m_btn_txt">블로그</span>
             </button>
           </a>
-          <a href="https://shopping.naver.com/home" class="text_box_under_menu_area_a">
-            <button type="button" id="text_box_under_shop" class="text_box_under_menu_area_button">
-              <span class="text_box_under_menu_text">쇼핑</span>
+          <a href="https://shopping.naver.com/home" class="main_t_m_link">
+            <button type="button" id="main_t_m_btn_shop" class="main_t_m_btn">
+              <span class="main_t_m_btn_txt">쇼핑</span>
             </button>
           </a>
-          <a href="https://news.naver.com/" class="text_box_under_menu_area_a">
-            <button type="button" id="text_box_under_news" class="text_box_under_menu_area_button">
-              <span class="text_box_under_menu_text">뉴스</span>
+          <a href="https://news.naver.com/" class="main_t_m_link">
+            <button type="button" id="main_t_m_btn_news" class="main_t_m_btn">
+              <span class="main_t_m_btn_txt">뉴스</span>
             </button>
           </a>
-          <a href="https://finance.naver.com/" class="text_box_under_menu_area_a">
-            <button type="button" id="text_box_under_stock" class="text_box_under_menu_area_button">
-              <span class="text_box_under_menu_text">증권</span>
+          <a href="https://finance.naver.com/" class="main_t_m_link">
+            <button type="button" id="main_t_m_btn_stock" class="main_t_m_btn">
+              <span class="main_t_m_btn_txt">증권</span>
             </button>
           </a>
-          <a href="https://land.naver.com/" class="text_box_under_menu_area_a">
-            <button type="button" id="text_box_under_estate" class="text_box_under_menu_area_button">
-              <span class="text_box_under_menu_text">부동산</span>
+          <a href="https://land.naver.com/" class="main_t_m_link">
+            <button type="button" id="main_t_m_btn_estate" class="main_t_m_btn">
+              <span class="main_t_m_btn_txt">부동산</span>
             </button>
           </a>
-          <a href="https://map.naver.com/" class="text_box_under_menu_area_a">
-            <button type="button" id="text_box_under_map" class="text_box_under_menu_area_button">
-              <span class="text_box_under_menu_text">지도</span>
+          <a href="https://map.naver.com/" class="main_t_m_link">
+            <button type="button" id="main_t_m_btn_map" class="main_t_m_btn">
+              <span class="main_t_m_btn_txt">지도</span>
             </button>
           </a>
-          <a href="https://comic.naver.com/" class="text_box_under_menu_area_a">
-            <button type="button" id="text_box_under_webtoon" class="text_box_under_menu_area_button">
-              <span class="text_box_under_menu_text">웹툰</span>
+          <a href="https://comic.naver.com/" class="main_t_m_link">
+            <button type="button" id="main_t_m_btn_webtoon" class="main_t_m_btn">
+              <span class="main_t_m_btn_txt">웹툰</span>
             </button>
           </a>
-          <button type="button" id="text_box_under_etcbutton" class="text_box_under_menu_area_button">
+          <button type="button" id="main_t_m_btn_etc" class="main_t_m_btn">
           </button>
         </div>
       </div>
       <!-- etcbutton 누르면 밑에 나오는 히든블록 -->
-      <div id="search_hidden_allservice">
-        <div id="search_hidden_allservice_textcontent_box">
-          <p id="search_hidden_allservice_textcontent">전체서비스 &gt;</p>
+      <div id="main_t_m_hid_box">
+        <div id="main_t_m_hid_box_box">
+          <p id="main_t_m_hid_txt_allservice">전체서비스 &gt;</p>
         </div>
-        <ul id="search_hidden_allservice_ul">
-          <li id="search_hidden_allservice_weather" class="search_hidden_allservice_li">
+        <ul id="main_t_m_hid_list">
+          <li class="main_t_m_hid_list_list">
             <img src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615143240N24qS.png" alt=""
-              class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">날씨</p>
-          <li id="search_hidden_allservice_navergame" class="search_hidden_allservice_li"><img
+              class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">날씨</p>
+          <liclass="main_t_m_hid_list_list"><img
               src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616260278Z2lsz.png" alt=""
-              class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">네이버게임</p>
+              class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">네이버게임</p>
+          </liclass=>
+          <li class="main_t_m_hid_list_list"><img
+              src="./image/header_naverpay.png" alt="" class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">네이버페이</p>
           </li>
-          <li id="search_hidden_allservice_naverpay" class="search_hidden_allservice_li"><img
-              src="./image/header_naverpay.png" alt="" class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">네이버페이</p>
-          </li>
-          <li id="search_hidden_allservice_navertv" class="search_hidden_allservice_li"><img
+          <li class="main_t_m_hid_list_list"><img
               src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615629697xqe8h.png" alt=""
-              class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">네이버TV</p>
+              class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">네이버TV</p>
           </li>
-          <li id="search_hidden_allservice_book" class="search_hidden_allservice_li"><img
+          <li class="main_t_m_hid_list_list"><img
               src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616828755X4Iuc.png" alt=""
-              class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">도서</p>
+              class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">도서</p>
           </li>
-          <li id="search_hidden_allservice_band" class="search_hidden_allservice_li"><img
+          <li class="main_t_m_hid_list_list"><img
               src="https://s.pstatic.net/static/www/mobile/edit/20230512_0/upload_16838622244122SLac.png" alt=""
-              class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">밴드</p>
+              class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">밴드</p>
           </li>
-          <li id="search_hidden_allservice_diction" class="search_hidden_allservice_li"><img
+          <li class="main_t_m_hid_list_list"><img
               src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614686949xgRjs.png" alt=""
-              class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">사전</p>
+              class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">사전</p>
           </li>
-          <li id="search_hidden_allservice_shoplive" class="search_hidden_allservice_li"><img
+          <li class="main_t_m_hid_list_list"><img
               src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615237323Nosgw.png" alt=""
-              class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">쇼핑라이브</p>
+              class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">쇼핑라이브</p>
           </li>
-          <li id="search_hidden_allservice_sport" class="search_hidden_allservice_li"><img
+          <li class="main_t_m_hid_list_list"><img
               src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615170126wWXeF.png" alt=""
-              class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">스포츠</p>
+              class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">스포츠</p>
           </li>
-          <li id="search_hidden_allservice_series" class="search_hidden_allservice_li"><img
+          <li class="main_t_m_hid_list_list"><img
               src="https://s.pstatic.net/static/www/mobile/edit/20230510_0/upload_1683681088181XIv7l.png" alt=""
-              class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">시리즈</p>
+              class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">시리즈</p>
           </li>
-          <li id="search_hidden_allservice_webnov" class="search_hidden_allservice_li"><img
+          <li class="main_t_m_hid_list_list"><img
               src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683616227176TNAGo.png" alt=""
-              class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">웹소설</p>
+              class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">웹소설</p>
           </li>
-          <li id="search_hidden_allservice_knowle" class="search_hidden_allservice_li"><img
+          <li class="main_t_m_hid_list_list"><img
               src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614778670w8zOW.png" alt=""
-              class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">지식iN</p>
+              class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">지식iN</p>
           </li>
-          <li id="search_hidden_allservice_calen" class="search_hidden_allservice_li"><img
+          <li class="main_t_m_hid_list_list"><img
               src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614031341REs6q.png" alt=""
-              class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">캘린더</p>
+              class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">캘린더</p>
           </li>
-          <li id="search_hidden_allservice_happyb" class="search_hidden_allservice_li"><img
+          <li class="main_t_m_hid_list_list"><img
               src="https://s.pstatic.net/static/www/mobile/edit/20230515_0/upload_1684145310538UE0f6.png" alt=""
-              class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">해피빈</p>
+              class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">해피빈</p>
           </li>
-          <li id="search_hidden_allservice_mybox" class="search_hidden_allservice_li"><img
+          <li class="main_t_m_hid_list_list"><img
               src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683613879082NqPl6.png" alt=""
-              class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">MYBOX</p>
+              class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">MYBOX</p>
           </li>
-          <li id="search_hidden_allservice_vibe" class="search_hidden_allservice_li"><img
+          <li class="main_t_m_hid_list_list"><img
               src="https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614990809zc0tj.png" alt=""
-              class="search_hidden_allservice_icon">
-            <p class="search_hidden_allservice_icon_text">VIBE</p>
+              class="main_t_m_hid_ico">
+            <p class="main_t_m_hid_txt">VIBE</p>
           </li>
         </ul>
       </div>
       <!-- 트라이앵글 누르면 밑에 나오는 히든블록 -->
-      <div id="search_hidden" class="search_hidden_block">
+      <div id="main_t_m_hid_box_triangle__" class="main_t_m_hid_box_triangle">
         <a href="https://help.naver.com/service/5627/category/3904?lang=ko" target="_blank">
           <span>도움말</span>
         </a>
@@ -207,32 +204,32 @@
     </header>
 
     <!-- aside가 iframe으로 들어갈 장소 -->
-    <aside id="top_left_button_menu">
-      <iframe id="top_left_button_iframe" src="./naverclone_aside.html" frameborder="0"></iframe>
+    <aside id="aside_t_l_box">
+      <iframe id="aside_t_l_box_box" src="./naverclone_aside.html" frameborder="0"></iframe>
     </aside>
 
-    <main id="main_grid" class="main_grid">
-      <section id="section_left" class="section_left">
-        <div id="item_1_1" class="main_grid_item"></div>
-        <div id="item_1_2" class="main_grid_item"></div>
-        <div id="item_1_3" class="main_grid_item"></div>
-        <div id="item_1_4" class="main_grid_item"></div>
+    <main class="main_m_box">
+      <section id="main_m_l_box__">
+        <div id="main_m_l_box_1_1" class="main_m_l_box_box"></div>
+        <div id="main_m_l_box_2_1" class="main_m_l_box_box"></div>
+        <div id="main_m_l_box_3_1" class="main_m_l_box_box"></div>
+        <div id="main_m_l_box_4_1" class="main_m_l_box_box"></div>
       </section>
-      <nav id="main_grid_nav">
-        <div id="main_grid_nav_div">
-          <div id="item_2_1" class="main_grid_item">
-            <ul id="naver_login_ul">
-              <li class="naver_login_li">네이버를 더 안전하고 편리하게 이용하세요</li>
-              <li id="naver_login_li_id" class="naver_login_li"><a href="#" class="naver_login_a"><span id="naver_login_naver">NAVER</span>&#160;로그인</a></li>
-              <li class="naver_login_li"><a href="#" class="naver_login_forgot_a">아이디 찾기</a> | <a href="#" class="naver_login_forgot_a">비밀번호 찾기</a> | <a href="#" class="naver_login_forgot_a">회원가입</a></li>
+      <nav>
+        <div id="main_m_l_box_nav">
+          <div id="main_m_l_box_1_2" class="main_m_l_box_box">
+            <ul id="main_m_l_box_1_2_list">
+              <li class="main_m_l_box_1_2_list_list">네이버를 더 안전하고 편리하게 이용하세요</li>
+              <li id="main_m_l_box_1_2_list_list__" class="main_m_l_box_1_2_list_list"><a href="#" class="main_m_l_box_1_2_link_login"><span id="main_m_l_box_1_2_link_txt">NAVER</span>&#160;로그인</a></li>
+              <li class="main_m_l_box_1_2_list_list"><a href="#" class="main_m_l_box_1_2_link_forgot">아이디 찾기</a> | <a href="#" class="main_m_l_box_1_2_link_forgot">비밀번호 찾기</a> | <a href="#" class="main_m_l_box_1_2_link_forgot">회원가입</a></li>
             </ul>
           </div>
-          <div id="item_2_2" class="main_grid_item"></div>
-          <div id="item_2_3" class="main_grid_item"></div>
-          <div id="item_2_4" class="main_grid_item"></div>
-          <div id="item_2_5" class="main_grid_item"></div>
-          <div id="item_2_6" class="main_grid_item"></div>
-          <div id="item_2_7" class="main_grid_item"></div>
+          <div id="main_m_l_box_2_2" class="main_m_l_box_box"></div>
+          <div id="main_m_l_box_3_2" class="main_m_l_box_box"></div>
+          <div id="main_m_l_box_4_2" class="main_m_l_box_box"></div>
+          <div id="main_m_l_box_5_2" class="main_m_l_box_box"></div>
+          <div id="main_m_l_box_6_2" class="main_m_l_box_box"></div>
+          <div id="main_m_l_box_7_2" class="main_m_l_box_box"></div>
         </div>
       </nav>
     </main>
