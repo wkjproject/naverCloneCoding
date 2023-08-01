@@ -13,5 +13,5 @@
 # 네이밍룰
 + [네이밍룰 Wiki](https://github.com/wkjproject/personal/wiki/Naming-Rule)
 # 주요기능
-+ iframe 모달창
-+ 형태소 분해 검색기
++ [iframe 모달창 Wiki](https://github.com/wkjproject/personal/wiki/iframe-%EB%AA%A8%EB%8B%AC%EC%B0%BD)
++ [형태소 분해 검색기 Wiki](https://github.com/wkjproject/personal/wiki/%ED%98%95%ED%83%9C%EC%86%8C-%EB%B6%84%ED%95%B4-%EA%B2%80%EC%83%89)
